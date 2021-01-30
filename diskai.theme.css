@@ -9,6 +9,19 @@
 	--channeltextarea-background: #303030;
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+	
+	/* Text colours */
+	/* main Text colours */
+	--text-normal: #fff;
+	--text-muted: #888;
+	--diskai-text-emphasis: #ffdf80; /* Monokai yellow, with HSL lightness bootsted 70% -> 75% (original: #ffd866) */
+	/* channels */
+	--channels-default: var(--text-muted);
+	--interactive-active: var(--diskai-text-emphasis);
+	--interactive-muted: #555;
+	/* headers */
+	--header-primary: var(--diskai-text-emphasis);
+	--header-secondary: #bbb; /* Wait this is actually the stock value */
 }
 
 /* Upload modal */
