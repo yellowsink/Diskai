@@ -17,6 +17,7 @@
 	/* main Text colours */
 	--text-normal: #fff;
 	--text-muted: #888;
+	--text-link: var(--diskai-light-blue);
 	--diskai-text-emphasis: var(--monokai-bright-yellow);
 	/* channels */
 	--channels-default: var(--text-muted);
@@ -25,6 +26,12 @@
 	/* headers */
 	--header-primary: var(--diskai-text-emphasis);
 	--header-secondary: #bbb; /* Wait this is actually the stock value */
+	
+	/* Controls */
+	--diskai-control-radio-dot: var(--monokai-purple); /* Radio button */
+	--diskai-control-slider-bar: var(--monokai-purple); /* Slider bar */
+	--diskai-control-button: var(--monokai-purple); /* Button */
+	--radio-group-dot-foreground: var(--diskai-control-radio-dot);
 	
 	/* Monokai colours */
 	--monokai-black: #1a1a1a;
@@ -43,6 +50,7 @@
 	--diskai-pink: #ff4d91;
 	--diskai-light-pink: #ffb3d0;
 	--diskai-lilac: #b26bff;
+	--diskai-light-blue: #76efdf;
 }
 
 /* Upload modal */
