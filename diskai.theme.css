@@ -28,3 +28,48 @@
 .theme-dark .categoryHeader-O1zU94, .theme-dark .selected-1Tbx07 { background-color: var(--background-tertiary); }
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
+
+
+
+
+
+/* little extras :) */
+
+/*
+Better message box
+courtesy of Jenny#0002 on powercord discord
+https://discord.com/channels/538759280057122817/755005803303403570/804665923801579541 
+*/
+.form-2fGMdU { padding: 0px; }
+.inner-MADQqc { padding-top: 4px; }
+.channelTextArea-rNsIhG { margin-bottom: 0px; }
+
+.base-gE7OpD {
+    top: -24px;
+    background-color: var(--background-primary);
+}
+
+.scrollableContainer-2NUZem {
+    border-radius: 0px;
+    min-height: 53px;
+}
+
+/*
+Jump to bottom pill
+by me!
+https://canary.discord.com/channels/538759280057122817/755005803303403570/805090610201624597
+*/
+.barButtonMain-3K-jeJ {
+	display: none;
+}
+.jumpToPresentBar-G1R9s6 {
+	display: block;
+	background-color: transparent;
+}
+.barButtonAlt-mYL1lj {
+	float: right;
+	bottom: 1rem;
+	z-index: 999; /* Forgive me CSS gods */
+	border-radius: 0.7rem;
+	background-color: var(--background-tertiary);
+}
