@@ -91,6 +91,18 @@
 	color: var(--text-normal);
 }
 
+/* Blurple filled buttons*/
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+	background-color: var(--diskai-control-button);
+	color: var(--text-normal);
+}
+
+/* Blurple sliders */
+.barFill-23-gu- { background-color: var(--diskai-control-slider-bar); }
+
+/* Beta text */
+.beta-3smTDE { color: var(--monokai-red); }
+
 /* Nitro Features */
 .theme-dark .featureEmoji-3pTtR2 .featureTitle-W5O6R1   { color: var(--monokai-yellow); }
 .theme-dark .featureProfile-tTo0C- .featureTitle-W5O6R1 { color: var(--monokai-green); }
@@ -99,6 +111,16 @@
 .featureUploadSize-2CAVFL .featureTitle-W5O6R1          { color: var(--diskai-lilac); }
 .featureGoLive-30cvVw .featureTitle-W5O6R1              { color: var(--diskai-pink); }
 
+/* Notification Settings */
+.wrapper-3jrx9n { border-color: var(--monokai-purple); }
+.wrapper-3jrx9n.disabledSelected-2Kf0yZ { border-color: var(--monokai-red); }
+.disabled-3I9jyo:hover { color: var(--monokai-red); }
+.selected-mKYnfr.disabled-3I9jyo { color: var(--monokai-red); }
+.option-n0icdO:hover { background-color: var(--monokai-purple); }
+.selected-mKYnfr.option-n0icdO {
+	border-color: var(--monokai-purple);
+	background-color: var(--monokai-purple);
+}
 
 
 
