@@ -71,6 +71,9 @@
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
 
+/* Notification bell strikethrough */
+.strikethrough-3Wiitd { color: var(--monokai-red); }
+
 /* settings */
 /* settings close icon */
 .theme-dark .keybind-KpFkfr { color: var(--monokai-red); }
