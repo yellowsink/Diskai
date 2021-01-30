@@ -1,1 +1,25 @@
-/* This is the beginning... */
+:root {
+	/* BG colours */
+	/* main BG colours */
+	--background-primary: #1a1a1a;
+	--background-secondary: #252525;
+	--background-tertiary: #2b2b2b; /* THIS EXISTS??? */
+	/* textarea colours */
+	--channeltextarea-background: #303030;
+	/* fix quick switcher textarea colour */
+	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+}
+
+/* Upload modal */
+.theme-dark .uploadModal-2ifh8j { background-color: var(--background-secondary); }
+.theme-dark .footer-3mqk7D { background-color: var(--background-primary); }
+
+/* Keyshortcuts modal */
+.theme-dark .keyboardShortcutsModal-3piNz7 { background-color: var(--background-primary); }
+
+/* Delete modal */
+.theme-dark .root-1gCeng { background-color: var(--background-secondary); }
+.theme-dark .message-2qRu38 { background-color: var(--background-tertiary); } /* stop message being undiscernable from BG */
+.theme-dark .footer-2gL1pp { background-color: var(--background-primary); }
+
+/* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
