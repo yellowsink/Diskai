@@ -149,6 +149,9 @@
 	background-color: var(--monokai-purple);
 }
 
+/* Danger actions => delete message */
+.colorDanger-2qLCe1, .colorDanger-2qLCe1 .checkbox-3s5GYZ, .colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
+.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
 
 
 /* little extras :) */
