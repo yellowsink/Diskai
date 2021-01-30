@@ -22,4 +22,8 @@
 .theme-dark .message-2qRu38 { background-color: var(--background-tertiary); } /* stop message being undiscernable from BG */
 .theme-dark .footer-2gL1pp { background-color: var(--background-primary); }
 
+/* Autocomplete */
+.theme-dark .autocomplete-1vrmpx { background-color: var(--background-secondary); }
+.theme-dark .categoryHeader-O1zU94, .theme-dark .selected-1Tbx07 { background-color: var(--background-tertiary); }
+
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
