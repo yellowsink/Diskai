@@ -4,7 +4,7 @@
 .theme-dark {
 	/* BG colours */
 	/* main BG colours */
-	--background-primary: #1a1a1a;
+	--background-primary: var(--monokai-black);
 	--background-secondary: #252525;
 	--background-tertiary: #2b2b2b;
 	--background-accent: #2f2f2f;
@@ -17,7 +17,7 @@
 	/* main Text colours */
 	--text-normal: #fff;
 	--text-muted: #888;
-	--diskai-text-emphasis: #ffdf80; /* Monokai yellow, with HSL lightness bootsted 70% -> 75% (original: #ffd866) */
+	--diskai-text-emphasis: var(--monokai-bright-yellow);
 	/* channels */
 	--channels-default: var(--text-muted);
 	--interactive-active: var(--diskai-text-emphasis);
@@ -25,6 +25,24 @@
 	/* headers */
 	--header-primary: var(--diskai-text-emphasis);
 	--header-secondary: #bbb; /* Wait this is actually the stock value */
+	
+	/* Monokai colours */
+	--monokai-black: #1a1a1a;
+	--monokai-red: #f4005f;
+	--monokai-green: #98e024;
+	--monokai-yellow: #fa8419;
+	--monokai-purple: #9d65ff;
+	--monokai-cyan: #58d1eb;
+	--monokai-white: #c4c5b5;
+	--monokai-bright-black: #625e4c;
+	--monokai-bright-yellow: #e0d561;
+	--monokai-bright-white: #f6f6ef;
+	--monokai-background: #1a1a1a;
+	--monokai-foreground: #c4c5b5;
+	/* Diskai colours */
+	--diskai-pink: #ff4d91;
+	--diskai-light-pink: #ffb3d0;
+	--diskai-lilac: #b26bff;
 }
 
 /* Upload modal */
@@ -45,6 +63,33 @@
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
 
+/* settings */
+/* settings close icon */
+.theme-dark .keybind-KpFkfr { color: var(--monokai-red); }
+.theme-dark .closeButton-1tv5uR { border-color: var(--monokai-red); }
+
+/* settings remove text */
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6 { color: var(--monokai-red); }
+
+/* red outline settings buttons */
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+	color: var(--monokai-red);
+	border-color: var(--monokai-red);
+}
+
+/* red filled settings buttons */
+.lookFilled-1Gx00P.colorRed-1TFJan {
+	background-color: var(--monokai-red);
+	color: var(--text-normal);
+}
+
+/* Nitro Features */
+.theme-dark .featureEmoji-3pTtR2 .featureTitle-W5O6R1   { color: var(--monokai-yellow); }
+.theme-dark .featureProfile-tTo0C- .featureTitle-W5O6R1 { color: var(--monokai-green); }
+.featurePremiumGuild-2KpCr6 .featureTitle-W5O6R1        { color: var(--monokai-cyan); }
+.theme-dark .featureBadge-3ZA-Ca .featureTitle-W5O6R1   { color: var(--diskai-light-pink); }
+.featureUploadSize-2CAVFL .featureTitle-W5O6R1          { color: var(--diskai-lilac); }
+.featureGoLive-30cvVw .featureTitle-W5O6R1              { color: var(--diskai-pink); }
 
 
 
@@ -75,9 +120,7 @@ Jump to bottom pill
 by me!
 https://canary.discord.com/channels/538759280057122817/755005803303403570/805090610201624597
 */
-.barButtonMain-3K-jeJ {
-	display: none;
-}
+.barButtonMain-3K-jeJ { display: none; }
 .jumpToPresentBar-G1R9s6 {
 	display: block;
 	background-color: transparent;
