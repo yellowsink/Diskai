@@ -227,8 +227,31 @@
 	color: var(--text-normal);
 }
 
-/* Discord logo in top left */
+/* Discord wordmark in top left */
 .wordmark-2iDDfm path { fill: var(--diskai-text-emphasis); }
+
+/* Discord logo in top left */
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+	background-color: var(--diskai-text-emphasis);
+	color: var(--monokai-bright-white)
+}
+
+/* Explore and Add server icons */
+.circleIconButton-jET_ig.selected-ugP_am {
+	background-color: var(--diskai-text-emphasis);
+	color: var(--monokai-bright-white);	
+}
+.circleIconButton-jET_ig.selected-ugP_am path { fill: var(--monokai-bright-white); }
+.circleIconButton-jET_ig path { fill: var(--diskai-text-emphasis); }
+
+/* Explore selected category */
+.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG {
+	background-color: var(--diskai-text-emphasis);
+}
+
+/* Context menus */
+.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--monokai-purple); } /* The :not() stops it theming danger button such as deleting messages */
+
 
 
 
