@@ -131,6 +131,12 @@
 	color: var(--text-normal);
 }
 
+/* Inverted buttons */
+.lookInverted-2D7oAl.colorYellow-2JqYwt {
+	color: var(--monokai-yellow);
+	background-color: #fff;
+}
+
 /* Blurple sliders */
 .barFill-23-gu- { background-color: var(--diskai-control-slider-bar); }
 
@@ -173,6 +179,14 @@
 /* Danger actions => delete message */
 .colorDanger-2qLCe1, .colorDanger-2qLCe1 .checkbox-3s5GYZ, .colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
 .colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
+
+/* Yellow "reload required" banner in powercord updater */
+.cardWarning-2yPNAa {
+	background-color: var(--monokai-yellow);
+	border-color: var(--monokai-yellow);
+}
+
+
 
 
 /* little extras :) */
