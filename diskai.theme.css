@@ -15,8 +15,8 @@
 	
 	/* Text colours */
 	/* main Text colours */
-	--text-normal: #fff;
-	--text-muted: #888;
+	--text-normal: var(--monokai-bright-white);
+	--text-muted: var(--diskai-muted-white);
 	--text-link: var(--diskai-light-blue);
 	--diskai-text-emphasis: var(--diskai-dark-green);
 	/* channels */
@@ -59,6 +59,7 @@
 	--diskai-muted-purple: #9567e4;
 	--diskai-turquoise: #0bda97;
 	--diskai-dark-green: #79b814;
+	--diskai-muted-white: #888;
 }
 
 /* Upload modal */
@@ -134,7 +135,7 @@
 /* Inverted buttons */
 .lookInverted-2D7oAl.colorYellow-2JqYwt {
 	color: var(--monokai-yellow);
-	background-color: #fff;
+	background-color: var(--monokai-white);
 }
 
 /* Blurple sliders */
