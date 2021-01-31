@@ -69,6 +69,15 @@
 }
 
 /*******************************\
+|     Bits discord decided      |
+|   not to use variables for    |
+\*******************************/
+.theme-dark .container-1D34oG {
+	background-color: var(--background-accent);
+}
+
+
+/*******************************\
 |            Modals             |
 \*******************************/
 
