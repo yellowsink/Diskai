@@ -38,6 +38,10 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--diskai-turquoise: #0bda97;
 	--diskai-dark-green: #79b814;
 	--diskai-muted-white: #888;
+	
+	/* VERY IMPORTANT CUSTOMISATION VARIABLES */
+	--diskai-text-emphasis: var(--diskai-dark-green);
+	--diskai-mention-colour: var(--monokai-purple);
 }
 ```
 
@@ -61,7 +65,6 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--text-normal: var(--monokai-bright-white);
 	--text-muted: var(--diskai-muted-white);
 	--text-link: var(--diskai-light-blue);
-	--diskai-text-emphasis: var(--diskai-dark-green);
 	/* channels */
 	--channels-default: var(--text-muted);
 	--interactive-active: var(--diskai-text-emphasis);
@@ -106,6 +109,26 @@ Pick a Monokai or Diskai colour variable from the Global list and add it into `/
 ```css
 :root {
 	--diskai-text-emphasis: var(/*<colour variable>*/) !important;
+}
+```
+
+## @mentions and #channels
+
+### Make it my accent / text emphasis colour
+
+```css
+:root {
+	--diskai-mention-colour: var(--diskai-text-emphasis) !important;
+}
+```
+
+### Lemme choose a separate one!
+
+Pick a Monokai or Diskai colour variable from the Global list and add it into `/*<colour variable>*/`. Default is in Global list.
+
+```css
+:root {
+	--diskai-mention-colour: var(/*<colour variable>*/) !important;
 }
 ```
 
