@@ -8,6 +8,8 @@ I may add support for BBD if I get around to it.
 
 # I want to customise it!!!
 
+**NOTICE: IF YOU PREFER NON-MONOKAI COLOUR SCHEMES, *Diskai Schemes* IS COMING SOON!**
+
 Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to reference the list of variables.
 
 ## Variables list
