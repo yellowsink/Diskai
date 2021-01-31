@@ -1,4 +1,4 @@
-# Diskai: A Discord theme for Monokai lovers
+# Diskai: A customisable Discord theme for Monokai lovers
 
 Isn’t Monokai just a wonderful colour scheme? Let’s make a Discord theme around it!
 
@@ -95,7 +95,7 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 
 ```css
 :root {
-    --diskai-text-emphasis: var(--monokai-bright-white) !important;
+	--diskai-text-emphasis: var(--monokai-bright-white) !important;
 }
 ```
 
@@ -105,7 +105,7 @@ Pick a Monokai or Diskai colour variable from the Global list and add it into `/
 
 ```css
 :root {
-    --diskai-text-emphasis: var(/*<colour variable>*/) !important;
+	--diskai-text-emphasis: var(/*<colour variable>*/) !important;
 }
 ```
 
