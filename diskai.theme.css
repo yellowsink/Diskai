@@ -18,7 +18,7 @@
 	--text-normal: #fff;
 	--text-muted: #888;
 	--text-link: var(--diskai-light-blue);
-	--diskai-text-emphasis: var(--monokai-bright-yellow);
+	--diskai-text-emphasis: var(--diskai-dark-green);
 	/* channels */
 	--channels-default: var(--text-muted);
 	--interactive-active: var(--diskai-text-emphasis);
@@ -29,6 +29,7 @@
 	
 	/* Controls */
 	--diskai-control-radio-dot: var(--monokai-purple); /* Radio button */
+	--diskai-control-checkbox-checked: var(--monokai-purple); /* Checked checkbox */
 	--diskai-control-slider-bar: var(--monokai-purple); /* Slider bar */
 	--diskai-control-button: var(--monokai-purple); /* Button */
 	--diskai-control-button-muted: var(--diskai-muted-purple); /* Muted Button */
@@ -57,6 +58,7 @@
 	--diskai-light-blue: #76efdf;
 	--diskai-muted-purple: #9567e4;
 	--diskai-turquoise: #0bda97;
+	--diskai-dark-green: #79b814;
 }
 
 /* Upload modal */
@@ -124,8 +126,24 @@
 	color: var(--text-normal);
 }
 
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+	background-color: var(--diskai-dark-green);
+	color: var(--text-normal);
+}
+
 /* Blurple sliders */
 .barFill-23-gu- { background-color: var(--diskai-control-slider-bar); }
+
+/* Checkboxes */
+.checkbox-1ix_J3.checked-3_4uQ9 {
+	background-color: var(--diskai-control-checkbox-checked) !important;
+	border-color: var(--diskai-control-checkbox-checked) !important;
+}
+
+/* Switches */
+/*.container-3auIfb {
+	background-color: var(--monokai-green) !important;
+} */ /* TODO: This forces them to be always green - find a fix. */
 
 /* Beta text */
 .beta-3smTDE { color: var(--monokai-red); }
@@ -148,6 +166,9 @@
 	border-color: var(--monokai-purple);
 	background-color: var(--monokai-purple);
 }
+
+/* That damn close button */
+.closeButton-1tv5uR path { fill: var(--monokai-red); }
 
 /* Danger actions => delete message */
 .colorDanger-2qLCe1, .colorDanger-2qLCe1 .checkbox-3s5GYZ, .colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
