@@ -2,7 +2,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");
 
 .theme-dark {
-	/* BG colours */
+	/*******************************\
+	|          BG colours           |
+	\*******************************/
+	
 	/* main BG colours */
 	--background-primary: var(--monokai-black);
 	--background-secondary: #252525;
@@ -38,6 +41,9 @@
 }
 
 :root {
+	/*******************************\
+	|            Colours            |
+	\*******************************/
 	/* Monokai colours */
 	--monokai-black: #1a1a1a;
 	--monokai-red: #f4005f;
@@ -62,6 +68,10 @@
 	--diskai-muted-white: #888;
 }
 
+/*******************************\
+|            Modals             |
+\*******************************/
+
 /* Upload modal */
 .theme-dark .uploadModal-2ifh8j { background-color: var(--background-secondary); }
 .theme-dark .footer-3mqk7D { background-color: var(--background-primary); }
@@ -83,7 +93,9 @@
 /* Notification bell strikethrough */
 .strikethrough-3Wiitd { color: var(--monokai-red); }
 
-/* settings */
+/*******************************\
+|           Settings            |
+\*******************************/
 /* settings close icon */
 .theme-dark .keybind-KpFkfr { color: var(--monokai-red); }
 .theme-dark .closeButton-1tv5uR { border-color: var(--monokai-red); }
@@ -190,7 +202,11 @@
 
 
 
-/* little extras :) */
+/*******************************\
+|      stuff stolen from        |
+|     #css-snippets in the      |
+|     powercord discord :P      |
+\*******************************/
 
 /*
 Better message box
@@ -227,4 +243,38 @@ https://canary.discord.com/channels/538759280057122817/755005803303403570/805090
 	z-index: 999; /* Forgive me CSS gods */
 	border-radius: 0.7rem;
 	background-color: var(--background-tertiary);
+}
+
+/*
+Drop shadow behind images, video, codeblocks, and other embeds
+by Benny#9876
+https://canary.discord.com/channels/538759280057122817/755005803303403570/801919477918597211
+ */
+.embedWrapper-lXpS3L { box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.3); }
+code { box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.3); }
+
+/*
+Bigger popup avatars
+by wathhr#1459
+https://canary.discord.com/channels/538759280057122817/755005803303403570/797655264199180348
+*/
+.header-QKLPzZ > .avatar-3EQepX.wrapper-3t9DeA {top: 5px;}
+.avatarWrapperNormal-3wFMbf.avatarWrapper-3H_478 > .wrapper-3t9DeA,
+.header-QKLPzZ > .avatar-3EQepX.wrapper-3t9DeA,
+.avatarHint-1qgaV3 {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/*
+Super satisfying emoji picker
+by mic0#2704
+https://discord.com/channels/538759280057122817/755005803303403570/800627367465975868
+*/
+.base-1pYU8j {
+    transition: all 0.5s;
+}
+.base-1pYU8j:hover {
+    transition: all 0s;
+    transform: scale(1.02);
 }
