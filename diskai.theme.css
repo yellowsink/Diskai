@@ -260,6 +260,9 @@
 /* Context menus */
 .colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--monokai-purple); } /* The :not() stops it theming danger button such as deleting messages */
 
+/* The rectangle message box breaks the upload dialog border-radius */
+.channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem { border-radius: 8px; }
+
 
 
 
