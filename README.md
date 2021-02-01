@@ -171,27 +171,27 @@ Pick a colour variable or define your own colour and add it into `/*<colour>*/`.
 ```css
 :root {
 	/* Monokai colours */
-	--monokai-black: /*<colour>*/;
-	--monokai-red: /*<colour>*/;
-	--monokai-green: /*<colour>*/;
-	--monokai-yellow: /*<colour>*/;
-	--monokai-purple: /*<colour>*/;
-	--monokai-cyan: /*<colour>*/;
-	--monokai-white: /*<colour>*/;
-	--monokai-bright-black: /*<colour>*/;
-	--monokai-bright-yellow: /*<colour>*/;
-	--monokai-bright-white: /*<colour>*/;
-	--monokai-background: /*<colour>*/;
-	--monokai-foreground: /*<colour>*/;
+	--monokai-black: /*<colour>*/ !important;
+	--monokai-red: /*<colour>*/ !important;
+	--monokai-green: /*<colour>*/ !important;
+	--monokai-yellow: /*<colour>*/ !important;
+	--monokai-purple: /*<colour>*/ !important;
+	--monokai-cyan: /*<colour>*/ !important;
+	--monokai-white: /*<colour>*/ !important;
+	--monokai-bright-black: /*<colour>*/ !important;
+	--monokai-bright-yellow: /*<colour>*/ !important;
+	--monokai-bright-white: /*<colour>*/ !important;
+	--monokai-background: /*<colour>*/ !important;
+	--monokai-foreground: /*<colour>*/ !important;
 	/* Diskai colours */
-	--diskai-pink: /*<colour>*/;
-	--diskai-light-pink: /*<colour>*/;
-	--diskai-lilac: /*<colour>*/;
-	--diskai-light-blue: /*<colour>*/;
-	--diskai-muted-purple: /*<colour>*/;
-	--diskai-turquoise: /*<colour>*/;
-	--diskai-dark-green: /*<colour>*/;
-	--diskai-muted-white: /*<colour>*/;
+	--diskai-pink: /*<colour>*/ !important;
+	--diskai-light-pink: /*<colour>*/ !important;
+	--diskai-lilac: /*<colour>*/ !important;
+	--diskai-light-blue: /*<colour>*/ !important;
+	--diskai-muted-purple: /*<colour>*/ !important;
+	--diskai-turquoise: /*<colour>*/ !important;
+	--diskai-dark-green: /*<colour>*/ !important;
+	--diskai-muted-white: /*<colour>*/ !important;
 }
 ```
 
