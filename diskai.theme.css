@@ -284,21 +284,21 @@ https://discord.com/channels/538759280057122817/755005803303403570/8046659238015
 }
 
 /*
-Jump to bottom pill
+Jump to bottom pill UPDATE
 by me!
-https://canary.discord.com/channels/538759280057122817/755005803303403570/805090610201624597
+https://canary.discord.com/channels/538759280057122817/755005803303403570/805724588277104680
 */
 .barButtonMain-3K-jeJ { display: none; }
 .jumpToPresentBar-G1R9s6 {
-	display: block;
-	background-color: transparent;
+    display: block;
+    background-color: transparent;
+    right: 12px;  
 }
 .barButtonAlt-mYL1lj {
-	float: right;
-	bottom: 1rem;
-	z-index: 999; /* Forgive me CSS gods */
-	border-radius: 0.7rem;
-	background-color: var(--background-tertiary);
+    float: right;
+    bottom: 1.6rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+    background-color: var(--background-tertiary);
 }
 
 /*
