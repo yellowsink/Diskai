@@ -263,6 +263,9 @@
 /* The rectangle message box breaks the upload dialog border-radius */
 .channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem { border-radius: 8px; }
 
+/* LIVE tag in VC */
+.liveSmall-1dy2uA { background-color: var(--monokai-red) !important; }
+
 
 
 
