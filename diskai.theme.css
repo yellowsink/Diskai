@@ -227,7 +227,12 @@
 .wrapper-3WhCwL { color: var(--diskai-mention-colour); }
 .wrapper-3WhCwL:hover {
 	background-color: var(--diskai-mention-colour);
-	color: var(--text-normal);
+	color: var(--text-normal) !important;
+}
+
+.wrapper-3WhCwL.mention.interactive:hover {
+	background-color: var(--diskai-mention-colour) !important;
+	border-radius: 3px;
 }
 
 /* Discord wordmark in top left */
@@ -236,7 +241,7 @@
 /* Discord logo in top left */
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
 	background-color: var(--diskai-text-emphasis);
-	color: var(--monokai-bright-white)
+	color: var(--monokai-bright-white);
 }
 
 /* Explore and Add server icons */
