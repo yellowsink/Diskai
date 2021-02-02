@@ -279,6 +279,9 @@
 #status-picker-dnd .status-1AY8sU       { background-color: var(--rs-dnd-color)       !important; }
 #status-picker-invisible .status-1AY8sU { background-color: var(--rs-invisible-color) !important; }
 
+/* Changelog links are stubborn as to colours */
+.content-s2SEQO a { color: var(--text-link); }
+
 
 
 
