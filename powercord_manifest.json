@@ -3,7 +3,7 @@
     "description": "A Discord theme for Monokai lovers",
     "version": "1.0.0",
     "author": "Yellowsink#8156",
-    "theme": "diskai.theme.css",
+    "theme": "diskai.theme.scss",
     "consent": ["ext_listing"],
     "license": "-"
 }
