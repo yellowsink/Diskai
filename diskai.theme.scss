@@ -280,6 +280,11 @@
 /* Changelog links are stubborn as to colours */
 .content-s2SEQO a { color: var(--text-link); }
 
+/* Strikethrough muted categories & channels */
+.wrapper-PY0fhH.muted-2JBAyG, .wrapper-PY0fhH.muted-2JBAyG .name-3l27Hl,
+.modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
+	text-decoration: line-through;
+}
 
 
 
