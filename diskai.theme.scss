@@ -25,7 +25,7 @@ $ios-image-spoilers: true;
 	--monokai-bright-yellow: #e0d561;
 	--monokai-bright-white:  #f6f6ef;
 	--monokai-background:    #1a1a1a;
-	--monokai-foreground:    #c4c5b5;
+	--monokai-foreground:    #bfbfba;
 	/* Diskai colours */
 	--diskai-pink:           #ff4d91;
 	--diskai-light-pink:     #ffb3d0;
@@ -44,7 +44,7 @@ $ios-image-spoilers: true;
 	--diskai-accent-colour:  var(--diskai-dark-green);
 	--diskai-accent-contrast: var(--text-normal);
 	--diskai-mention-colour: var(--monokai-purple);
-	--diskai-mention-text: var(--text-normal);
+	--diskai-mention-text: var(--monokai-bright-white);
 	
 	
 	/*******************************\
@@ -108,29 +108,29 @@ $ios-image-spoilers: true;
 	\*******************************/
 	
 	/* main BG colours */
-	--background-primary:   var(--monokai-black);
-	--background-secondary: #252525;
+	--background-primary:   var(--monokai-bright-white);
+	--background-secondary: #ddddd5;
 	--background-mobile-secondary : var(--background-secondary);
-	--background-tertiary:  #2b2b2b;
-	--background-accent:    #2f2f2f;
-	--background-modifier-accent: #ffffff18;
+	--background-tertiary:  var(--monokai-foreground);
+	--background-accent:    #bfbfbf;
+	/* --background-modifier-accent: #ffffff18; */
 	/* textarea colours */
-	--channeltextarea-background: #303030;
+	--channeltextarea-background: #ccccce;
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
 	
 	/* Text colours */
 	/* main Text colours */
-	--text-normal: var(--monokai-bright-white);
-	--text-muted:  var(--diskai-muted-white);
-	--text-link:   var(--diskai-light-blue);
+	--text-normal: var(--monokai-black);
+	--text-muted:  var(--monokai-bright-black);
+	--text-link:   #2775bd;
 	/* channels */
 	--channels-default:   var(--text-muted);
 	--interactive-active: var(--diskai-accent-colour);
-	--interactive-muted:  #555;
+	--interactive-muted:  #ccc;
 	/* headers */
 	--header-primary:   var(--diskai-accent-colour);
-	--header-secondary: #bbb; /* Wait this is actually the stock value */
+	--header-secondary: #666; /* Wait this is actually the stock value */
 	
 	/* Controls */
 	--diskai-control-radio-dot:        var(--monokai-purple);           /* Radio button */

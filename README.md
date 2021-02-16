@@ -109,7 +109,49 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 ### Light theme - specific
 
 ```css
-/* None yet */
+.theme-light {
+	/*******************************\
+	|          BG colours           |
+	\*******************************/
+	
+	/* main BG colours */
+	--background-primary:   var(--monokai-bright-white);
+	--background-secondary: #ddddd5;
+	--background-mobile-secondary : var(--background-secondary);
+	--background-tertiary:  var(--monokai-foreground);
+	--background-accent:    #bfbfbf;
+	/* --background-modifier-accent: #ffffff18; */
+	/* textarea colours */
+	--channeltextarea-background: #ccccce;
+	/* fix quick switcher textarea colour */
+	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+	
+	/* Text colours */
+	/* main Text colours */
+	--text-normal: var(--monokai-black);
+	--text-muted:  var(--monokai-bright-black);
+	--text-link:   #2775bd;
+	/* channels */
+	--channels-default:   var(--text-muted);
+	--interactive-active: var(--diskai-accent-colour);
+	--interactive-muted:  #ccc;
+	/* headers */
+	--header-primary:   var(--diskai-accent-colour);
+	--header-secondary: #666; /* Wait this is actually the stock value */
+	
+	/* Controls */
+	--diskai-control-radio-dot:        var(--monokai-purple);           /* Radio button */
+	--diskai-control-checkbox-checked: var(--monokai-purple);           /* Checked checkbox */
+	--diskai-control-slider-bar:       var(--monokai-purple);           /* Slider bar */
+	--diskai-control-button:           var(--monokai-purple);           /* Button */
+	--diskai-control-button-muted:     var(--diskai-muted-purple);      /* Muted Button */
+	--diskai-control-button-yellow:    var(--monokai-yellow);           /* Yellow Button */
+	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+
+	/* Misc */
+	--background-mentioned: #fa84190d;
+	--background-mentioned-hover: #fd891c14;
+}
 ```
 
 ## Custom accent / text emphasis colour
@@ -173,7 +215,7 @@ Pick a colour variable or define your own colour and add it into `/*<colour>*/`.
 
 ### Light Theme
 
-Pick a colour variable or define your own colour and add it into `/*<colour>*/`. You would see the defaults under the Light Theme specific list but there aren’t any at the moment (2021-01-31).
+Pick a colour variable or define your own colour and add it into `/*<colour>*/`. You can see the defaults under the Light Theme specific list.
 
 ```css
 .theme-light {
