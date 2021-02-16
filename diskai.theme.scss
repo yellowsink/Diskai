@@ -303,6 +303,12 @@ $hide-help: true;
 	.anchor-3Z-8Bb[href="https://support.discord.com"] { display: none; }
 }
 
+/* File download button */
+.wrapperAudio-1jDe0Q .metadataDownload-1fk90V path,
+.downloadButton-23tKQp path { fill: var(--text-link); }
+
+/* Message pin */
+.content-2M3n_H .anchor-3Z-8Bb { color: var(--text-link); }
 
 
 /*******************************\
