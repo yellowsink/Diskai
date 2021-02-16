@@ -60,8 +60,10 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--diskai-muted-white: #888;
 	
 	/* VERY IMPORTANT CUSTOMISATION VARIABLES */
-	--diskai-text-emphasis: var(--diskai-dark-green);
+	--diskai-accent-colour: var(--diskai-dark-green);
+	--diskai-accent-contrast: var(--text-normal);
 	--diskai-mention-colour: var(--monokai-purple);
+	--diskai-mention-text: var(--text-normal);
 }
 ```
 
@@ -87,10 +89,10 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--text-link: var(--diskai-light-blue);
 	/* channels */
 	--channels-default: var(--text-muted);
-	--interactive-active: var(--diskai-text-emphasis);
+	--interactive-active: var(--diskai-accent-colour);
 	--interactive-muted: #555;
 	/* headers */
-	--header-primary: var(--diskai-text-emphasis);
+	--header-primary: var(--diskai-accent-colour);
 	--header-secondary: #bbb; /* Wait this is actually the stock value */
 	
 	/* Controls */
@@ -110,15 +112,14 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 /* None yet */
 ```
 
-
-
 ## Custom accent / text emphasis colour
 
 ### I want plain white
 
 ```css
 :root {
-	--diskai-text-emphasis: var(--monokai-bright-white) !important;
+	--diskai-accent-colour: var(--monokai-bright-white) !important;
+	--diskai-accent-contrast: var(--monokai-black) !important; /* This colour should contrast against the accent colour */
 }
 ```
 
@@ -128,7 +129,8 @@ Pick a Monokai or Diskai colour variable from the Global list and add it into `/
 
 ```css
 :root {
-	--diskai-text-emphasis: var(/*<colour variable>*/) !important;
+	--diskai-accent-colour: var(/*<colour variable>*/) !important;
+	--diskai-accent-contrast: var(/*<colour variable>*/) !important; /* This colour should contrast against the accent colour */
 }
 ```
 
@@ -138,7 +140,8 @@ Pick a Monokai or Diskai colour variable from the Global list and add it into `/
 
 ```css
 :root {
-	--diskai-mention-colour: var(--diskai-text-emphasis) !important;
+	--diskai-mention-colour: var(--diskai-accent-colour) !important;
+	--diskai-mention-text: var(--diskai-accent-contrast) !important;
 }
 ```
 
@@ -149,6 +152,7 @@ Pick a Monokai or Diskai colour variable from the Global list and add it into `/
 ```css
 :root {
 	--diskai-mention-colour: var(/*<colour variable>*/) !important;
+	--diskai-mention-text: var(/*<colour variable>*/) !important; /* This colour should contrast against the accent colour */
 }
 ```
 

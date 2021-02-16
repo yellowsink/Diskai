@@ -41,8 +41,10 @@ $ios-image-spoilers: true;
 	|        VERY IMPORTANT         |
 	|    CUSTOMISATION VARIABLES    |
 	\*******************************/
-	--diskai-text-emphasis:  var(--diskai-dark-green);
+	--diskai-accent-colour:  var(--diskai-dark-green);
+	--diskai-accent-contrast: var(--text-normal);
 	--diskai-mention-colour: var(--monokai-purple);
+	--diskai-mention-text: var(--text-normal);
 	
 	
 	/*******************************\
@@ -79,10 +81,49 @@ $ios-image-spoilers: true;
 	--text-link:   var(--diskai-light-blue);
 	/* channels */
 	--channels-default:   var(--text-muted);
-	--interactive-active: var(--diskai-text-emphasis);
+	--interactive-active: var(--diskai-accent-colour);
 	--interactive-muted:  #555;
 	/* headers */
-	--header-primary:   var(--diskai-text-emphasis);
+	--header-primary:   var(--diskai-accent-colour);
+	--header-secondary: #bbb; /* Wait this is actually the stock value */
+	
+	/* Controls */
+	--diskai-control-radio-dot:        var(--monokai-purple);           /* Radio button */
+	--diskai-control-checkbox-checked: var(--monokai-purple);           /* Checked checkbox */
+	--diskai-control-slider-bar:       var(--monokai-purple);           /* Slider bar */
+	--diskai-control-button:           var(--monokai-purple);           /* Button */
+	--diskai-control-button-muted:     var(--diskai-muted-purple);      /* Muted Button */
+	--diskai-control-button-yellow:    var(--monokai-yellow);           /* Yellow Button */
+	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+}
+
+.theme-light {
+	/*******************************\
+	|          BG colours           |
+	\*******************************/
+	
+	/* main BG colours */
+	--background-primary:   var(--monokai-black);
+	--background-secondary: #252525;
+	--background-tertiary:  #2b2b2b;
+	--background-accent:    #2f2f2f;
+	--background-modifier-accent: #ffffff18;
+	/* textarea colours */
+	--channeltextarea-background: #303030;
+	/* fix quick switcher textarea colour */
+	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+	
+	/* Text colours */
+	/* main Text colours */
+	--text-normal: var(--monokai-bright-white);
+	--text-muted:  var(--diskai-muted-white);
+	--text-link:   var(--diskai-light-blue);
+	/* channels */
+	--channels-default:   var(--text-muted);
+	--interactive-active: var(--diskai-accent-colour);
+	--interactive-muted:  #555;
+	/* headers */
+	--header-primary:   var(--diskai-accent-colour);
 	--header-secondary: #bbb; /* Wait this is actually the stock value */
 	
 	/* Controls */
@@ -108,8 +149,8 @@ $ios-image-spoilers: true;
 .container-1r6BKw.themed-ANHk51    { background-color: var(--background-secondary); }
 .children-19S4PO::after { display: none; }
 /* Channel hashtag icon */
-.children-19S4PO .iconWrapper-2OrFZ1 path[fill="currentColor"] { fill: var(--diskai-text-emphasis); }
-.iconWrapper-2OrFZ1.selected-1GqIat:hover path { fill: var(--diskai-text-emphasis); }
+.children-19S4PO .iconWrapper-2OrFZ1 path[fill="currentColor"] { fill: var(--diskai-accent-colour); }
+.iconWrapper-2OrFZ1.selected-1GqIat:hover path { fill: var(--diskai-accent-colour); }
 .iconWrapper-2OrFZ1.selected-1GqIat:hover { filter: brightness(1.2); }
 
 /*******************************\
@@ -133,7 +174,7 @@ $ios-image-spoilers: true;
 .categoryHeader-O1zU94, .selected-1Tbx07 { background-color: var(--background-tertiary) !important; }
 
 /* Quick Switcher "PROTIP" */
-.inline-136HKr .pro-1T8RK7 { color: var(--diskai-text-emphasis) !important; }
+.inline-136HKr .pro-1T8RK7 { color: var(--diskai-accent-colour) !important; }
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
 
@@ -196,7 +237,9 @@ $ios-image-spoilers: true;
 	border-color:     var(--diskai-control-checkbox-checked) !important;
 }
 .colorDefault-2K3EoJ .checkbox-3s5GYZ,
-.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN { color: var(--diskai-control-checkbox-checked) }
+.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN { color: var(--diskai-control-checkbox-checked); }
+.colorDefault-2K3EoJ.focused-3afm-j .checkbox-3s5GYZ,
+.colorDefault-2K3EoJ:not(.focused-3afm-j) .check-1JyqgN { color: var(--diskai-accent-contrast) !important; }
 
 /* Switches */
 /*.container-3auIfb {
@@ -239,13 +282,13 @@ $ios-image-spoilers: true;
 .container-1r6BKw.themed-ANHk51 .anchor-3Z-8Bb:not([href="https://support.discord.com"]),
 .container-1r6BKw.themed-ANHk51 .anchor-3Z-8Bb:not([href="https://support.discord.com"]) path,
 .wordmark-2iDDfm path /* Discord wordmark in top left */
-{ color: var(--diskai-text-emphasis); }
+{ color: var(--diskai-accent-colour); }
 
 /* #channels and @mentions */
 .wrapper-3WhCwL       { color: var(--diskai-mention-colour); }
 .wrapper-3WhCwL:hover {
 	background-color: var(--diskai-mention-colour);
-	color:            var(--text-normal) !important;
+	color:            var(--diskai-mention-text) !important;
 }
 
 .wrapper-3WhCwL.mention.interactive:hover {
@@ -255,36 +298,42 @@ $ios-image-spoilers: true;
 
 /* Discord logo in top left */
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-	background-color: var(--diskai-text-emphasis);
-	color:            var(--monokai-bright-white);
+	background-color: var(--diskai-accent-colour);
+	color:            var(--diskai-accent-contrast);
 }
 
 /* Explore and Add server icons */
 .circleIconButton-jET_ig.selected-ugP_am {
-	background-color: var(--diskai-text-emphasis);
-	color:            var(--monokai-bright-white);	
+	background-color: var(--diskai-accent-colour);
+	color:            var(--diskai-accent-contrast);	
 }
-.circleIconButton-jET_ig.selected-ugP_am path { fill: var(--monokai-bright-white); }
-.circleIconButton-jET_ig path                 { fill: var(--diskai-text-emphasis); }
+.circleIconButton-jET_ig.selected-ugP_am path { fill: var(--diskai-accent-contrast); }
+.circleIconButton-jET_ig path                 { fill: var(--diskai-accent-colour); }
 
 /* Explore selected category */
-.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG { background-color: var(--diskai-text-emphasis); }
+.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG { 
+	background-color: var(--diskai-accent-colour);
+	color: var(--diskai-accent-contrast); 
+}
 
 /* Context menus */
 /* All buttons */
-.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--diskai-text-emphasis); }
+.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) {
+	background-color: var(--diskai-accent-colour);
+	color: var(--diskai-accent-contrast);
+}
 /* Invite to server */
-#guild-header-popout-invite-people.focused-3afm-j { background-color: var(--monokai-purple); }
+#guild-header-popout-invite-people.focused-3afm-j { background-color: var(--monokai-purple); color: var(--text-normal); }
 #guild-header-popout-invite-people:not(.focused-3afm-j) { color: var(--monokai-purple); }
 #guild-header-popout-invite-people:not(.focused-3afm-j) path { fill: var(--monokai-purple); }
 /* Nitro boots */
-#guild-header-popout-premium-subscribe.focused-3afm-j { background-color: var(--diskai-pink); }
+#guild-header-popout-premium-subscribe.focused-3afm-j { background-color: var(--diskai-pink); color: var(--text-normal); }
 #guild-header-popout-premium-subscribe:not(.focused-3afm-j) path { fill: var(--diskai-pink); }
 /* Danger actions => delete message */
 .colorDanger-2qLCe1,
 .colorDanger-2qLCe1 .checkbox-3s5GYZ,
 .colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
-.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
+.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); color: var(--text-normal); }
 
 /* The rectangle message box breaks the upload dialog border-radius */
 .channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem { border-radius: 8px; }
@@ -308,7 +357,7 @@ $ios-image-spoilers: true;
 }
 
 /* Invite to this channel button */
-.iconItem-F7GRxr path { fill: var(--diskai-text-emphasis); }
+.iconItem-F7GRxr path { fill: var(--diskai-accent-colour); }
 
 @if $hide-help {
 	/* Go away help button */
