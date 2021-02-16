@@ -96,6 +96,10 @@ $ios-image-spoilers: true;
 	--diskai-control-button-muted:     var(--diskai-muted-purple);      /* Muted Button */
 	--diskai-control-button-yellow:    var(--monokai-yellow);           /* Yellow Button */
 	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+
+	/* Misc */
+	--background-mentioned: #fa84190d;
+	--background-mentioned-hover: #fd891c14;
 }
 
 .theme-light {
@@ -136,6 +140,10 @@ $ios-image-spoilers: true;
 	--diskai-control-button-muted:     var(--diskai-muted-purple);      /* Muted Button */
 	--diskai-control-button-yellow:    var(--monokai-yellow);           /* Yellow Button */
 	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+
+	/* Misc */
+	--background-mentioned: #fa84190d;
+	--background-mentioned-hover: #fd891c14;
 }
 
 /*******************************\
@@ -372,6 +380,10 @@ $ios-image-spoilers: true;
 
 /* Message pin */
 .content-2M3n_H .anchor-3Z-8Bb { color: var(--text-link); }
+
+/* Mentions */
+.mentioned-xhSam7::before { background-color: var(--monokai-yellow); }
+
 
 
 /*******************************\
