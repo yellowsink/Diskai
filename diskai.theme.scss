@@ -2,7 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");
 
 /*******************************\
-|            Colours            |
+|         Colour Palette        |
 \*******************************/
 /* Monokai colours */
 $monokai-black:         #1a1a1a;
@@ -26,6 +26,17 @@ $diskai-muted-purple:   #9567e4;
 $diskai-turquoise:      #0bda97;
 $diskai-dark-green:     #79b814;
 $diskai-muted-white:    #888;
+
+/*******************************\
+|           BG Colours          |
+\*******************************/
+/* Dark */
+$bg-dark-primary: #{$monokai-black};
+$bg-dark-secondary: #252525;
+$bg-dark-tertiary: #2b2b2b;
+$bg-dark-accent: #2f2f2f;
+$bg-dark-modifier-accent: #ffffff33;
+$bg-dark-channeltextarea: #303030;
 
 /*******************************\
 |        VERY IMPORTANT         |
@@ -54,13 +65,13 @@ $strikethrough-mute: true;
 	\*******************************/
 	
 	/* main BG colours */
-	--background-primary:   #{$monokai-black};
-	--background-secondary: #252525;
-	--background-tertiary:  #2b2b2b;
-	--background-accent:    #2f2f2f;
-	--background-modifier-accent: #ffffff33;
+	--background-primary:   #{$bg-dark-primary};
+	--background-secondary: #{$bg-dark-secondary};
+	--background-tertiary:  #{$bg-dark-tertiary};
+	--background-accent:    #{$bg-dark-accent};
+	--background-modifier-accent: #{$bg-dark-modifier-accent};
 	/* textarea colours */
-	--channeltextarea-background: #303030;
+	--channeltextarea-background: #{$bg-dark-channeltextarea};
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
 	
