@@ -384,6 +384,16 @@ $ios-image-spoilers: true;
 /* Mentions */
 .mentioned-xhSam7::before { background-color: var(--monokai-yellow); }
 
+/* Light theme disclaimer */
+.theme-light .children-rWhLdy :nth-child(2) h5::before {
+	content: "WARNING: Diskai supports light theme, but was designed for dark first. It will work fine, but if you want light theme you may wish to either seek another theme, or build your own custom colour scheme, as Diskai's is not the nicest looking.";
+	display: block;
+	font-size: 15pt;
+	color: var(--monokai-red);
+	line-height: 20px;
+	margin-bottom: 1.5rem;
+	text-transform: none;
+}
 
 
 /*******************************\
