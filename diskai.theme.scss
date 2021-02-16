@@ -126,8 +126,8 @@ $hide-help: true;
 .footer-2gL1pp  { background-color: var(--background-primary); }
 
 /* Autocomplete */
-.autocomplete-1vrmpx { background-color: var(--background-secondary); }
-.categoryHeader-O1zU94, .selected-1Tbx07 { background-color: var(--background-tertiary); }
+.autocomplete-1vrmpx { background-color: var(--background-secondary) !important; }
+.categoryHeader-O1zU94, .selected-1Tbx07 { background-color: var(--background-tertiary) !important; }
 
 /* Quick Switcher "PROTIP" */
 .inline-136HKr .pro-1T8RK7 { color: var(--diskai-text-emphasis) !important; }
@@ -236,8 +236,9 @@ $hide-help: true;
 }
 
 .tipTitle-GL9qAt, /* Loading splash screen "DID YOU KNOW" text */
-.anchor-3Z-8Bb:not([href="https://support.discord.com"]), /* Loading splash screen "Tweet Us" and "Server Status" text & icons */
-.anchor-3Z-8Bb:not([href="https://support.discord.com"]) path,
+/* Loading splash screen "Tweet Us" and "Server Status" text & icons */
+.container-1r6BKw.themed-ANHk51 .anchor-3Z-8Bb:not([href="https://support.discord.com"]),
+.container-1r6BKw.themed-ANHk51 .anchor-3Z-8Bb:not([href="https://support.discord.com"]) path,
 .wordmark-2iDDfm path /* Discord wordmark in top left */
 { color: var(--diskai-text-emphasis); }
 
