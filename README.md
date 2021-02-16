@@ -11,15 +11,17 @@ Main development target will be Powercord because BetterDiscord is broken on can
 Diskai comes with some optional features that can be enabled and disabled easily. As of now these are:
 - Strikethrough muted channels and categories
 - Hide the help button (top right)
+- [Nicer image spoilers](https://discord.com/channels/538759280057122817/755005803303403570/811210109405495316) (made to look like iOS image spoilers)
 
-Enable / Disable by editing the variables in your copy of `diskai.theme.scss`:
+Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (this shows the defaults)
 ```scss
 /*******************************\
 |       OPTIONAL FEATURES       |
 \*******************************/
 
-$strikethrough-mute: true; /* true by default */
-$hide-help: true;          /* true by default */
+$strikethrough-mute: true;
+$hide-help: true;
+$ios-image-spoilers: true;
 ```
 
 # I want to customise it!!!

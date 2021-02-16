@@ -7,6 +7,7 @@
 
 $strikethrough-mute: true;
 $hide-help: true;
+$ios-image-spoilers: true;
 
 :root {
 	/*******************************\
@@ -337,7 +338,7 @@ https://discord.com/channels/538759280057122817/755005803303403570/8046659238015
 /*
 Jump to bottom pill UPDATE
 by me!
-https://canary.discord.com/channels/538759280057122817/755005803303403570/805724588277104680
+https://discord.com/channels/538759280057122817/755005803303403570/805724588277104680
 */
 .barButtonMain-3K-jeJ    { display: none; }
 .jumpToPresentBar-G1R9s6 {
@@ -355,7 +356,7 @@ https://canary.discord.com/channels/538759280057122817/755005803303403570/805724
 /*
 Drop shadow behind images, video, codeblocks, and other embeds
 by Benny#9876
-https://canary.discord.com/channels/538759280057122817/755005803303403570/801919477918597211
+https://discord.com/channels/538759280057122817/755005803303403570/801919477918597211
  */
 .embedWrapper-lXpS3L { box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.3); }
 code                 { box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.3); }
@@ -363,7 +364,7 @@ code                 { box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.3); }
 /*
 Bigger popup avatars
 by wathhr#1459
-https://canary.discord.com/channels/538759280057122817/755005803303403570/797655264199180348
+https://discord.com/channels/538759280057122817/755005803303403570/797655264199180348
 */
 .header-QKLPzZ > .avatar-3EQepX.wrapper-3t9DeA {top: 5px;}
 .avatarWrapperNormal-3wFMbf.avatarWrapper-3H_478 > .wrapper-3t9DeA,
@@ -371,4 +372,24 @@ https://canary.discord.com/channels/538759280057122817/755005803303403570/797655
 .avatarHint-1qgaV3 {
     width:  100px !important;
     height: 100px !important;
+}
+
+@if $ios-image-spoilers {
+	/*
+	iOS-style image spoilers
+	by Yellowsink#8156
+	https://discord.com/channels/538759280057122817/755005803303403570/811210109405495316
+	*/
+	.inline-2bgipb.hiddenSpoilers-1ksnR6 { visibility: visible; }
+	.inline-2bgipb.hiddenSpoilers-1ksnR6 img { filter: blur(3rem); }
+	.inline-2bgipb.hiddenSpoilers-1ksnR6::after {
+		content: "SPOILER";
+		color: var(--text-normal);
+		display: block;
+		text-align: center;
+		top: calc(50% - 0.5rem);
+		position: absolute;
+		width: 100%;
+		font-weight: bold;
+	}
 }
