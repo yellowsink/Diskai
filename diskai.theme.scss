@@ -106,9 +106,11 @@ $ios-image-spoilers: true;
 \*******************************/
 
 .container-1r6BKw.themed-ANHk51    { background-color: var(--background-secondary); }
-.children-19S4PO:after { display: none; }
+.children-19S4PO::after { display: none; }
 /* Channel hashtag icon */
 .children-19S4PO .iconWrapper-2OrFZ1 path[fill="currentColor"] { fill: var(--diskai-text-emphasis); }
+.iconWrapper-2OrFZ1.selected-1GqIat:hover path { fill: var(--diskai-text-emphasis); }
+.iconWrapper-2OrFZ1.selected-1GqIat:hover { filter: brightness(1.2); }
 
 /*******************************\
 |            Modals             |
@@ -119,12 +121,12 @@ $ios-image-spoilers: true;
 .footer-3mqk7D      { background-color: var(--background-primary) !important; }
 
 /* Keyshortcuts modal */
-.keyboardShortcutsModal-3piNz7 { background-color: var(--background-primary); }
+.keyboardShortcutsModal-3piNz7 { background-color: var(--background-primary) !important; }
 
 /* Delete modal */
-.root-1gCeng    { background-color: var(--background-secondary); }
-.message-2qRu38 { background-color: var(--background-tertiary); } /* stop message being undiscernable from BG */
-.footer-2gL1pp  { background-color: var(--background-primary); }
+.root-1gCeng    { background-color: var(--background-secondary) !important; }
+.message-2qRu38 { background-color: var(--background-tertiary) !important; } /* stop message being undiscernable from BG */
+.footer-2gL1pp  { background-color: var(--background-primary) !important; }
 
 /* Autocomplete */
 .autocomplete-1vrmpx { background-color: var(--background-secondary) !important; }
@@ -193,6 +195,8 @@ $ios-image-spoilers: true;
 	background-color: var(--diskai-control-checkbox-checked) !important;
 	border-color:     var(--diskai-control-checkbox-checked) !important;
 }
+.colorDefault-2K3EoJ .checkbox-3s5GYZ,
+.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN { color: var(--diskai-control-checkbox-checked) }
 
 /* Switches */
 /*.container-3auIfb {
@@ -223,12 +227,6 @@ $ios-image-spoilers: true;
 
 /* That damn close button */
 .closeButton-1tv5uR path { fill: var(--monokai-red); }
-
-/* Danger actions => delete message */
-.colorDanger-2qLCe1,
-.colorDanger-2qLCe1 .checkbox-3s5GYZ,
-.colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
-.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
 
 /* Yellow "reload required" banner in powercord updater */
 .cardWarning-2yPNAa {
@@ -273,7 +271,20 @@ $ios-image-spoilers: true;
 .categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG { background-color: var(--diskai-text-emphasis); }
 
 /* Context menus */
-.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--monokai-purple); } /* The :not() stops it theming danger button such as deleting messages */
+/* All buttons */
+.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--diskai-text-emphasis); }
+/* Invite to server */
+#guild-header-popout-invite-people.focused-3afm-j { background-color: var(--monokai-purple); }
+#guild-header-popout-invite-people:not(.focused-3afm-j) { color: var(--monokai-purple); }
+#guild-header-popout-invite-people:not(.focused-3afm-j) path { fill: var(--monokai-purple); }
+/* Nitro boots */
+#guild-header-popout-premium-subscribe.focused-3afm-j { background-color: var(--diskai-pink); }
+#guild-header-popout-premium-subscribe:not(.focused-3afm-j) path { fill: var(--diskai-pink); }
+/* Danger actions => delete message */
+.colorDanger-2qLCe1,
+.colorDanger-2qLCe1 .checkbox-3s5GYZ,
+.colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
+.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
 
 /* The rectangle message box breaks the upload dialog border-radius */
 .channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem { border-radius: 8px; }
