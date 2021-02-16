@@ -28,6 +28,15 @@ $diskai-dark-green:     #79b814;
 $diskai-muted-white:    #888;
 
 /*******************************\
+|        VERY IMPORTANT         |
+|    CUSTOMISATION VARIABLES    |
+\*******************************/
+
+$diskai-text-emphasis:  #{$diskai-dark-green};
+$diskai-mention-colour: #{$monokai-purple};
+$strikethrough-mute: true;
+
+/*******************************\
 |           UI Colours          |
 \*******************************/
 /* BG Dark */
@@ -38,19 +47,29 @@ $bg-dark-accent: #2f2f2f;
 $bg-dark-modifier-accent: #ffffff33;
 $bg-dark-channeltextarea: #303030;
 /* Other Dark */
+$dark-text-normal: #{$monokai-bright-white};
+$dark-text-muted: #{$diskai-muted-white};
+$dark-text-link: #{$diskai-light-blue};
 $dark-interactive-active: #{$diskai-text-emphasis};
 $dark-interactive-muted: #555;
 $dark-header-primary: #{$diskai-text-emphasis};
 $dark-header-secondary: #bbb; /* Wait this is actually the stock value */
 
-/*******************************\
-|        VERY IMPORTANT         |
-|    CUSTOMISATION VARIABLES    |
-\*******************************/
-
-$diskai-text-emphasis:  #{$diskai-dark-green};
-$diskai-mention-colour: #{$monokai-purple};
-$strikethrough-mute: true;
+/* BG light */
+$bg-light-primary: #{$monokai-black};
+$bg-light-secondary: #252525;
+$bg-light-tertiary: #2b2b2b;
+$bg-light-accent: #2f2f2f;
+$bg-light-modifier-accent: #ffffff33;
+$bg-light-channeltextarea: #303030;
+/* Other light */
+$light-text-normal: #{$monokai-bright-white};
+$light-text-muted: #{$diskai-muted-white};
+$light-text-link: #{$diskai-light-blue};
+$light-interactive-active: #{$diskai-text-emphasis};
+$light-interactive-muted: #555;
+$light-header-primary: #{$diskai-text-emphasis};
+$light-header-secondary: #bbb; /* Wait this is actually the stock value */
 
 :root {
 	/*******************************\
@@ -62,6 +81,15 @@ $strikethrough-mute: true;
 	--rs-offline-color:   #{$diskai-muted-white} !important;
 	--rs-streaming-color: #{$monokai-purple}     !important;
 	--rs-invisible-color: #{$diskai-muted-white} !important;
+
+	/* Controls */
+	--diskai-control-radio-dot:        #{$monokai-purple};              /* Radio button */
+	--diskai-control-checkbox-checked: #{$monokai-purple};              /* Checked checkbox */
+	--diskai-control-slider-bar:       #{$monokai-purple};              /* Slider bar */
+	--diskai-control-button:           #{$monokai-purple};              /* Button */
+	--diskai-control-button-muted:     #{$diskai-muted-purple};         /* Muted Button */
+	--diskai-control-button-yellow:    #{$monokai-yellow};              /* Yellow Button */
+	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
 }
 
 .theme-dark {
@@ -78,9 +106,9 @@ $strikethrough-mute: true;
 	
 	/* Text colours */
 	/* main Text colours */
-	--text-normal: #{$monokai-bright-white};
-	--text-muted:  #{$diskai-muted-white};
-	--text-link:   #{$diskai-light-blue};
+	--text-normal: #{$dark-text-normal};
+	--text-muted:  #{$dark-text-muted};
+	--text-link:   #{$dark-text-link};
 	/* channels */
 	--channels-default:   var(--text-muted);
 	--interactive-active: #{$dark-interactive-active};
@@ -88,15 +116,32 @@ $strikethrough-mute: true;
 	/* headers */
 	--header-primary:   #{$dark-header-primary};
 	--header-secondary: #{$dark-header-secondary};
+}
+
+.theme-light {
+	/* main BG colours */
+	--background-primary:   #{$bg-light-primary};
+	--background-secondary: #{$bg-light-secondary};
+	--background-tertiary:  #{$bg-light-tertiary};
+	--background-accent:    #{$bg-light-accent};
+	--background-modifier-accent: #{$bg-light-modifier-accent};
+	/* textarea colours */
+	--channeltextarea-background: #{$bg-light-channeltextarea};
+	/* fix quick switcher textarea colour */
+	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
 	
-	/* Controls */
-	--diskai-control-radio-dot:        #{$monokai-purple};           /* Radio button */
-	--diskai-control-checkbox-checked: #{$monokai-purple};           /* Checked checkbox */
-	--diskai-control-slider-bar:       #{$monokai-purple};           /* Slider bar */
-	--diskai-control-button:           #{$monokai-purple};           /* Button */
-	--diskai-control-button-muted:     #{$diskai-muted-purple};      /* Muted Button */
-	--diskai-control-button-yellow:    #{$monokai-yellow};           /* Yellow Button */
-	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+	/* Text colours */
+	/* main Text colours */
+	--text-normal: #{$light-text-normal};
+	--text-muted:  #{$light-text-muted};
+	--text-link:   #{$light-text-link};
+	/* channels */
+	--channels-default:   var(--text-muted);
+	--interactive-active: #{$light-interactive-active};
+	--interactive-muted:  #{$light-interactive-muted};
+	/* headers */
+	--header-primary:   #{$light-header-primary};
+	--header-secondary: #{$light-header-secondary};
 }
 
 /*******************************\
