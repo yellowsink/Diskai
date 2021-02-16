@@ -346,9 +346,10 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 }
 
 /* Invite to this channel button */
-.iconItem-F7GRxr path {
-	fill: #{$diskai-text-emphasis};
-}
+.iconItem-F7GRxr path { fill: #{$diskai-text-emphasis}; }
+
+/* Go away help button */
+.anchor-3Z-8Bb[href="https://support.discord.com"] { display: none; }
 
 
 
