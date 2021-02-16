@@ -357,7 +357,7 @@ $ios-image-spoilers: true;
 }
 
 /* Invite to this channel button */
-.iconItem-F7GRxr path { fill: var(--diskai-accent-colour); }
+.iconItem-F7GRxr path { fill: var(--text-link); }
 
 @if $hide-help {
 	/* Go away help button */
