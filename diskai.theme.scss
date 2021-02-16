@@ -28,15 +28,20 @@ $diskai-dark-green:     #79b814;
 $diskai-muted-white:    #888;
 
 /*******************************\
-|           BG Colours          |
+|           UI Colours          |
 \*******************************/
-/* Dark */
+/* BG Dark */
 $bg-dark-primary: #{$monokai-black};
 $bg-dark-secondary: #252525;
 $bg-dark-tertiary: #2b2b2b;
 $bg-dark-accent: #2f2f2f;
 $bg-dark-modifier-accent: #ffffff33;
 $bg-dark-channeltextarea: #303030;
+/* Other Dark */
+$dark-interactive-active: #{$diskai-text-emphasis};
+$dark-interactive-muted: #555;
+$dark-header-primary: #{$diskai-text-emphasis};
+$dark-header-secondary: #bbb; /* Wait this is actually the stock value */
 
 /*******************************\
 |        VERY IMPORTANT         |
@@ -60,10 +65,6 @@ $strikethrough-mute: true;
 }
 
 .theme-dark {
-	/*******************************\
-	|          BG colours           |
-	\*******************************/
-	
 	/* main BG colours */
 	--background-primary:   #{$bg-dark-primary};
 	--background-secondary: #{$bg-dark-secondary};
@@ -82,11 +83,11 @@ $strikethrough-mute: true;
 	--text-link:   #{$diskai-light-blue};
 	/* channels */
 	--channels-default:   var(--text-muted);
-	--interactive-active: #{$diskai-text-emphasis};
-	--interactive-muted:  #555;
+	--interactive-active: #{$dark-interactive-active};
+	--interactive-muted:  #{$dark-interactive-muted};
 	/* headers */
-	--header-primary:   #{$diskai-text-emphasis};
-	--header-secondary: #bbb; /* Wait this is actually the stock value */
+	--header-primary:   #{$dark-header-primary};
+	--header-secondary: #{$dark-header-secondary};
 	
 	/* Controls */
 	--diskai-control-radio-dot:        #{$monokai-purple};           /* Radio button */
