@@ -2,147 +2,96 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");
 
 /*******************************\
-|         Colour Palette        |
-\*******************************/
-/* Monokai colours */
-$monokai-black:         #1a1a1a;
-$monokai-red:           #f4005f;
-$monokai-green:         #98e024;
-$monokai-yellow:        #fa8419;
-$monokai-purple:        #9d65ff;
-$monokai-cyan:          #58d1eb;
-$monokai-white:         #c4c5b5;
-$monokai-bright-black:  #625e4c;
-$monokai-bright-yellow: #e0d561;
-$monokai-bright-white:  #f6f6ef;
-$monokai-background:    #1a1a1a;
-$monokai-foreground:    #c4c5b5;
-/* Diskai colours */
-$diskai-pink:           #ff4d91;
-$diskai-light-pink:     #ffb3d0;
-$diskai-lilac:          #b26bff;
-$diskai-light-blue:     #76efdf;
-$diskai-muted-purple:   #9567e4;
-$diskai-turquoise:      #0bda97;
-$diskai-dark-green:     #79b814;
-$diskai-muted-white:    #888;
-
-/*******************************\
-|        VERY IMPORTANT         |
-|    CUSTOMISATION VARIABLES    |
+|       OPTIONAL FEATURES       |
 \*******************************/
 
-$diskai-text-emphasis:  #{$diskai-dark-green};
-$diskai-mention-colour: #{$monokai-purple};
 $strikethrough-mute: true;
 $hide-help: true;
 
-/*******************************\
-|           UI Colours          |
-\*******************************/
-/* BG Dark */
-$bg-dark-primary: #{$monokai-black};
-$bg-dark-secondary: #252525;
-$bg-dark-tertiary: #2b2b2b;
-$bg-dark-accent: #2f2f2f;
-$bg-dark-modifier-accent: #ffffff33;
-$bg-dark-channeltextarea: #303030;
-/* Other Dark */
-$dark-text-normal: #{$monokai-bright-white};
-$dark-text-muted: #{$diskai-muted-white};
-$dark-text-link: #{$diskai-light-blue};
-$dark-interactive-active: #{$diskai-text-emphasis};
-$dark-interactive-muted: #555;
-$dark-header-primary: #{$diskai-text-emphasis};
-$dark-header-secondary: #bbb; /* Wait this is actually the stock value */
-
-/* BG light */
-$bg-light-primary: #{$monokai-black};
-$bg-light-secondary: #252525;
-$bg-light-tertiary: #2b2b2b;
-$bg-light-accent: #2f2f2f;
-$bg-light-modifier-accent: #ffffff33;
-$bg-light-channeltextarea: #303030;
-/* Other light */
-$light-text-normal: #{$monokai-bright-white};
-$light-text-muted: #{$diskai-muted-white};
-$light-text-link: #{$diskai-light-blue};
-$light-interactive-active: #{$diskai-text-emphasis};
-$light-interactive-muted: #555;
-$light-header-primary: #{$diskai-text-emphasis};
-$light-header-secondary: #bbb; /* Wait this is actually the stock value */
-
 :root {
+	/*******************************\
+	|            Colours            |
+	\*******************************/
+	/* Monokai colours */
+	--monokai-black:         #1a1a1a;
+	--monokai-red:           #f4005f;
+	--monokai-green:         #98e024;
+	--monokai-yellow:        #fa8419;
+	--monokai-purple:        #9d65ff;
+	--monokai-cyan:          #58d1eb;
+	--monokai-white:         #c4c5b5;
+	--monokai-bright-black:  #625e4c;
+	--monokai-bright-yellow: #e0d561;
+	--monokai-bright-white:  #f6f6ef;
+	--monokai-background:    #1a1a1a;
+	--monokai-foreground:    #c4c5b5;
+	/* Diskai colours */
+	--diskai-pink:           #ff4d91;
+	--diskai-light-pink:     #ffb3d0;
+	--diskai-lilac:          #b26bff;
+	--diskai-light-blue:     #76efdf;
+	--diskai-muted-purple:   #9567e4;
+	--diskai-turquoise:      #0bda97;
+	--diskai-dark-green:     #79b814;
+	--diskai-muted-white:    #888;
+	
+	
+	/*******************************\
+	|        VERY IMPORTANT         |
+	|    CUSTOMISATION VARIABLES    |
+	\*******************************/
+	--diskai-text-emphasis:  var(--diskai-dark-green);
+	--diskai-mention-colour: var(--monokai-purple);
+	
+	
 	/*******************************\
 	|      User Status Colours      |
 	\*******************************/
-	--rs-online-color:    #{$monokai-green}      !important;
-	--rs-idle-color:      #{$monokai-yellow}     !important;
-	--rs-dnd-color:       #{$monokai-red}        !important;
-	--rs-offline-color:   #{$diskai-muted-white} !important;
-	--rs-streaming-color: #{$monokai-purple}     !important;
-	--rs-invisible-color: #{$diskai-muted-white} !important;
-
-	/* Controls */
-	--diskai-control-radio-dot:        #{$monokai-purple};              /* Radio button */
-	--diskai-control-checkbox-checked: #{$monokai-purple};              /* Checked checkbox */
-	--diskai-control-slider-bar:       #{$monokai-purple};              /* Slider bar */
-	--diskai-control-button:           #{$monokai-purple};              /* Button */
-	--diskai-control-button-muted:     #{$diskai-muted-purple};         /* Muted Button */
-	--diskai-control-button-yellow:    #{$monokai-yellow};              /* Yellow Button */
-	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
+	--rs-online-color:    var(--monokai-green)      !important;
+	--rs-idle-color:      var(--monokai-yellow)     !important;
+	--rs-dnd-color:       var(--monokai-red)        !important;
+	--rs-offline-color:   var(--diskai-muted-white) !important;
+	--rs-streaming-color: var(--monokai-purple)     !important;
+	--rs-invisible-color: var(--diskai-muted-white) !important;
 }
 
 .theme-dark {
+	/*******************************\
+	|          BG colours           |
+	\*******************************/
+	
 	/* main BG colours */
-	--background-primary:   #{$bg-dark-primary};
-	--background-secondary: #{$bg-dark-secondary};
-	--background-tertiary:  #{$bg-dark-tertiary};
-	--background-accent:    #{$bg-dark-accent};
-	--background-modifier-accent: #{$bg-dark-modifier-accent};
+	--background-primary:   var(--monokai-black);
+	--background-secondary: #252525;
+	--background-tertiary:  #2b2b2b;
+	--background-accent:    #2f2f2f;
+	--background-modifier-accent: #ffffff33;
 	/* textarea colours */
-	--channeltextarea-background: #{$bg-dark-channeltextarea};
+	--channeltextarea-background: #303030;
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
 	
 	/* Text colours */
 	/* main Text colours */
-	--text-normal: #{$dark-text-normal};
-	--text-muted:  #{$dark-text-muted};
-	--text-link:   #{$dark-text-link};
+	--text-normal: var(--monokai-bright-white);
+	--text-muted:  var(--diskai-muted-white);
+	--text-link:   var(--diskai-light-blue);
 	/* channels */
 	--channels-default:   var(--text-muted);
-	--interactive-active: #{$dark-interactive-active};
-	--interactive-muted:  #{$dark-interactive-muted};
+	--interactive-active: var(--diskai-text-emphasis);
+	--interactive-muted:  #555;
 	/* headers */
-	--header-primary:   #{$dark-header-primary};
-	--header-secondary: #{$dark-header-secondary};
-}
-
-.theme-light {
-	/* main BG colours */
-	--background-primary:   #{$bg-light-primary};
-	--background-secondary: #{$bg-light-secondary};
-	--background-tertiary:  #{$bg-light-tertiary};
-	--background-accent:    #{$bg-light-accent};
-	--background-modifier-accent: #{$bg-light-modifier-accent};
-	/* textarea colours */
-	--channeltextarea-background: #{$bg-light-channeltextarea};
-	/* fix quick switcher textarea colour */
-	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+	--header-primary:   var(--diskai-text-emphasis);
+	--header-secondary: #bbb; /* Wait this is actually the stock value */
 	
-	/* Text colours */
-	/* main Text colours */
-	--text-normal: #{$light-text-normal};
-	--text-muted:  #{$light-text-muted};
-	--text-link:   #{$light-text-link};
-	/* channels */
-	--channels-default:   var(--text-muted);
-	--interactive-active: #{$light-interactive-active};
-	--interactive-muted:  #{$light-interactive-muted};
-	/* headers */
-	--header-primary:   #{$light-header-primary};
-	--header-secondary: #{$light-header-secondary};
+	/* Controls */
+	--diskai-control-radio-dot:        var(--monokai-purple);           /* Radio button */
+	--diskai-control-checkbox-checked: var(--monokai-purple);           /* Checked checkbox */
+	--diskai-control-slider-bar:       var(--monokai-purple);           /* Slider bar */
+	--diskai-control-button:           var(--monokai-purple);           /* Button */
+	--diskai-control-button-muted:     var(--diskai-muted-purple);      /* Muted Button */
+	--diskai-control-button-yellow:    var(--monokai-yellow);           /* Yellow Button */
+	--radio-group-dot-foreground:      var(--diskai-control-radio-dot); /* Radio button dot */
 }
 
 /*******************************\
@@ -158,7 +107,7 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 .container-1r6BKw.themed-ANHk51    { background-color: var(--background-secondary); }
 .children-19S4PO:after { display: none; }
 /* Channel hashtag icon */
-.children-19S4PO .iconWrapper-2OrFZ1 path[fill="currentColor"] { fill: #{$diskai-text-emphasis}; }
+.children-19S4PO .iconWrapper-2OrFZ1 path[fill="currentColor"] { fill: var(--diskai-text-emphasis); }
 
 /*******************************\
 |            Modals             |
@@ -181,36 +130,36 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 .categoryHeader-O1zU94, .selected-1Tbx07 { background-color: var(--background-tertiary); }
 
 /* Quick Switcher "PROTIP" */
-.inline-136HKr .pro-1T8RK7 { color: #{$diskai-text-emphasis} !important; }
+.inline-136HKr .pro-1T8RK7 { color: var(--diskai-text-emphasis) !important; }
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
 
 /* Notification bell strikethrough */
-.strikethrough-3Wiitd { color: #{$monokai-red}; }
+.strikethrough-3Wiitd { color: var(--monokai-red); }
 
 /*******************************\
 |           Settings            |
 \*******************************/
 /* settings close icon */
-.keybind-KpFkfr     { color:        #{$monokai-red} !important; }
-.closeButton-1tv5uR { border-color: #{$monokai-red} !important; }
+.keybind-KpFkfr     { color:        var(--monokai-red) !important; }
+.closeButton-1tv5uR { border-color: var(--monokai-red) !important; }
 
 /* settings remove text */
-.lookLink-9FtZy-.colorPrimary-3b3xI6 { color: #{$monokai-red}; }
+.lookLink-9FtZy-.colorPrimary-3b3xI6 { color: var(--monokai-red); }
 
 /* Changelog text */
-.improved-1NJK-y { color: #{$monokai-purple}; }
-.progress-YsDrV- { color: #{$monokai-yellow}; }
+.improved-1NJK-y { color: var(--monokai-purple); }
+.progress-YsDrV- { color: var(--monokai-yellow); }
 
 /* Hypesquad banners */
-.membershipDialogHouse1-3KhKE- { background-color: #{$monokai-purple}; }   /* Shoutouts to Remko#0999 for giving me the Bravery CSS class */
-.membershipDialogHouse2-35h9SY { background-color: #{$diskai-pink}; }      /* Shoutouts to CastIce#3081 for giving me the Brilliance CSS class */
-.membershipDialogHouse3-15OBIQ { background-color: #{$diskai-turquoise}; } /* Balance */
+.membershipDialogHouse1-3KhKE- { background-color: var(--monokai-purple); }   /* Shoutouts to Remko#0999 for giving me the Bravery CSS class */
+.membershipDialogHouse2-35h9SY { background-color: var(--diskai-pink); }      /* Shoutouts to CastIce#3081 for giving me the Brilliance CSS class */
+.membershipDialogHouse3-15OBIQ { background-color: var(--diskai-turquoise); } /* Balance */
 
 /* red outline settings buttons */
 .lookOutlined-3sRXeN.colorRed-1TFJan {
-	color:        #{$monokai-red};
-	border-color: #{$monokai-red};
+	color:        var(--monokai-red);
+	border-color: var(--monokai-red);
 }
 
 /* Filled buttons*/
@@ -218,8 +167,8 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 .lookFilled-1Gx00P.colorBrand-3pXr91                { background-color: var(--diskai-control-button)        !important; }
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled       { background-color: var(--diskai-control-button-muted)  !important; }
 .lookFilled-1Gx00P.colorYellow-2JqYwt               { background-color: var(--diskai-control-button-yellow) !important; }
-.lookFilled-1Gx00P.colorRed-1TFJan                  { background-color: #{$monokai-red}                     !important; }
-.lookFilled-1Gx00P.colorGreen-29iAKY                { background-color: #{$diskai-dark-green}              !important; }
+.lookFilled-1Gx00P.colorRed-1TFJan                  { background-color: var(--monokai-red)                  !important; }
+.lookFilled-1Gx00P.colorGreen-29iAKY                { background-color: var(--diskai-dark-green)            !important; }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91:hover,
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled:hover,
@@ -231,8 +180,8 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 
 /* Inverted buttons */
 .lookInverted-2D7oAl.colorYellow-2JqYwt {
-	color:            #{$monokai-yellow};
-	background-color: #{$monokai-white};
+	color:            var(--monokai-yellow);
+	background-color: var(--monokai-white);
 }
 
 /* Blurple sliders */
@@ -246,89 +195,89 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 
 /* Switches */
 /*.container-3auIfb {
-	background-color: #{$monokai-green} !important;
+	background-color: var(--monokai-green) !important;
 } */ /* TODO: This forces them to be always green - find a fix. */
 
 /* Beta text */
-.beta-3smTDE { color: #{$monokai-red}; }
+.beta-3smTDE { color: var(--monokai-red); }
 
 /* Nitro Features */
-.featureEmoji-3pTtR2        .featureTitle-W5O6R1 { color: #{$monokai-yellow}; }
-.featureProfile-tTo0C-      .featureTitle-W5O6R1 { color: #{$monokai-green}; }
-.featurePremiumGuild-2KpCr6 .featureTitle-W5O6R1 { color: #{$monokai-cyan}; }
-.featureBadge-3ZA-Ca        .featureTitle-W5O6R1 { color: #{$diskai-light-pink}; }
-.featureUploadSize-2CAVFL   .featureTitle-W5O6R1 { color: #{$diskai-lilac}; }
-.featureGoLive-30cvVw       .featureTitle-W5O6R1 { color: #{$diskai-pink}; }
+.featureEmoji-3pTtR2        .featureTitle-W5O6R1 { color: var(--monokai-yellow); }
+.featureProfile-tTo0C-      .featureTitle-W5O6R1 { color: var(--monokai-green); }
+.featurePremiumGuild-2KpCr6 .featureTitle-W5O6R1 { color: var(--monokai-cyan); }
+.featureBadge-3ZA-Ca        .featureTitle-W5O6R1 { color: var(--diskai-light-pink); }
+.featureUploadSize-2CAVFL   .featureTitle-W5O6R1 { color: var(--diskai-lilac); }
+.featureGoLive-30cvVw       .featureTitle-W5O6R1 { color: var(--diskai-pink); }
 
 /* Notification Settings */
-.wrapper-3jrx9n                         { border-color:     #{$monokai-purple}; }
-.wrapper-3jrx9n.disabledSelected-2Kf0yZ { border-color:     #{$monokai-red}; }
-.disabled-3I9jyo:hover                  { color:            #{$monokai-red}; }
-.selected-mKYnfr.disabled-3I9jyo        { color:            #{$monokai-red}; }
-.option-n0icdO:hover                    { background-color: #{$monokai-purple}; }
+.wrapper-3jrx9n                         { border-color:     var(--monokai-purple); }
+.wrapper-3jrx9n.disabledSelected-2Kf0yZ { border-color:     var(--monokai-red); }
+.disabled-3I9jyo:hover                  { color:            var(--monokai-red); }
+.selected-mKYnfr.disabled-3I9jyo        { color:            var(--monokai-red); }
+.option-n0icdO:hover                    { background-color: var(--monokai-purple); }
 .selected-mKYnfr.option-n0icdO {
-	border-color:     #{$monokai-purple};
-	background-color: #{$monokai-purple};
+	border-color:     var(--monokai-purple);
+	background-color: var(--monokai-purple);
 }
 
 /* That damn close button */
-.closeButton-1tv5uR path { fill: #{$monokai-red}; }
+.closeButton-1tv5uR path { fill: var(--monokai-red); }
 
 /* Danger actions => delete message */
 .colorDanger-2qLCe1,
 .colorDanger-2qLCe1 .checkbox-3s5GYZ,
-.colorDanger-2qLCe1 .radioSelection-1HmrQS { color:            #{$monokai-red}; }
-.colorDanger-2qLCe1.focused-3afm-j         { background-color: #{$monokai-red}; }
+.colorDanger-2qLCe1 .radioSelection-1HmrQS { color: var(--monokai-red); }
+.colorDanger-2qLCe1.focused-3afm-j { background-color: var(--monokai-red); }
 
 /* Yellow "reload required" banner in powercord updater */
 .cardWarning-2yPNAa {
-	background-color: #{$monokai-yellow};
-	border-color:     #{$monokai-yellow};
+	background-color: var(--monokai-yellow);
+	border-color:     var(--monokai-yellow);
 }
 
 .tipTitle-GL9qAt, /* Loading splash screen "DID YOU KNOW" text */
 .anchor-3Z-8Bb:not([href="https://support.discord.com"]), /* Loading splash screen "Tweet Us" and "Server Status" text & icons */
 .anchor-3Z-8Bb:not([href="https://support.discord.com"]) path,
 .wordmark-2iDDfm path /* Discord wordmark in top left */
-{ color: #{$diskai-text-emphasis}; }
+{ color: var(--diskai-text-emphasis); }
 
 /* #channels and @mentions */
-.wrapper-3WhCwL       { color: #{$diskai-mention-colour}; }
+.wrapper-3WhCwL       { color: var(--diskai-mention-colour); }
 .wrapper-3WhCwL:hover {
-	background-color: #{$diskai-mention-colour};
+	background-color: var(--diskai-mention-colour);
 	color:            var(--text-normal) !important;
 }
 
 .wrapper-3WhCwL.mention.interactive:hover {
-	background-color: #{$diskai-mention-colour} !important;
+	background-color: var(--diskai-mention-colour) !important;
 	border-radius:    3px;
 }
 
 /* Discord logo in top left */
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-	background-color: #{$diskai-text-emphasis};
-	color:            #{$monokai-bright-white};
+	background-color: var(--diskai-text-emphasis);
+	color:            var(--monokai-bright-white);
 }
 
 /* Explore and Add server icons */
 .circleIconButton-jET_ig.selected-ugP_am {
-	background-color: #{$diskai-text-emphasis};
-	color:            #{$monokai-bright-white};	
+	background-color: var(--diskai-text-emphasis);
+	color:            var(--monokai-bright-white);	
 }
-.circleIconButton-jET_ig.selected-ugP_am path { fill: #{$monokai-bright-white}; }
-.circleIconButton-jET_ig path                 { fill: #{$diskai-text-emphasis}; }
+.circleIconButton-jET_ig.selected-ugP_am path { fill: var(--monokai-bright-white); }
+.circleIconButton-jET_ig path                 { fill: var(--diskai-text-emphasis); }
 
 /* Explore selected category */
-.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG { background-color: #{$diskai-text-emphasis}; }
+.categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG { background-color: var(--diskai-text-emphasis); }
 
 /* Context menus */
-.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: #{$monokai-purple}; } /* The :not() stops it theming danger button such as deleting messages */
+.colorDefault-2K3EoJ.focused-3afm-j:not(.colorDanger-2qLCe1) { background-color: var(--monokai-purple); } /* The :not() stops it theming danger button such as deleting messages */
 
 /* The rectangle message box breaks the upload dialog border-radius */
 .channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem { border-radius: 8px; }
 
 /* LIVE tag in VC */
-.liveSmall-1dy2uA { background-color: $monokai-red !important; }
+.liveSmall-1dy2uA { background-color: var(--monokai-red) !important; }
 
 /* Fix the status picker popup not using the variables (discord pls fix) */
 #status-picker-online    .status-1AY8sU { background-color: var(--rs-online-color)    !important; }
@@ -339,16 +288,14 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 /* Changelog links are stubborn as to colours */
 .content-s2SEQO a { color: var(--text-link); }
 
-@if $strikethrough-mute {
-	/* Strikethrough muted categories & channels */
-	.wrapper-PY0fhH.muted-2JBAyG, .wrapper-PY0fhH.muted-2JBAyG .name-3l27Hl,
-	.modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
-		text-decoration: line-through;
-	}
+/* Strikethrough muted categories & channels */
+.wrapper-PY0fhH.muted-2JBAyG, .wrapper-PY0fhH.muted-2JBAyG .name-3l27Hl,
+.modeMuted-onO3r- .icon-1DeIlz, .modeMuted-onO3r- .name-23GUGE {
+	text-decoration: line-through;
 }
 
 /* Invite to this channel button */
-.iconItem-F7GRxr path { fill: #{$diskai-text-emphasis}; }
+.iconItem-F7GRxr path { fill: var(--diskai-text-emphasis); }
 
 @if $hide-help {
 	/* Go away help button */
