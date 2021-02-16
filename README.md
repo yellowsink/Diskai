@@ -6,6 +6,22 @@ Main development target will be Powercord because BetterDiscord is broken on can
 
 I may add support for BBD if I get around to it.
 
+# Optional Features
+
+Diskai comes with some optional features that can be enabled and disabled easily. As of now these are:
+- Strikethrough muted channels and categories
+- Hide the help button (top right)
+
+Enable / Disable by editing the variables in your copy of `diskai.theme.scss`:
+```scss
+/*******************************\
+|       OPTIONAL FEATURES       |
+\*******************************/
+
+$strikethrough-mute: true; /* true by default */
+$hide-help: true;          /* true by default */
+```
+
 # I want to customise it!!!
 
 **NOTICE: IF YOU PREFER NON-MONOKAI COLOUR SCHEMES, *Diskai Schemes* IS COMING SOON!**
