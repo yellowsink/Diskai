@@ -115,8 +115,8 @@ $ios-image-spoilers: true;
 \*******************************/
 
 /* Upload modal */
-.uploadModal-2ifh8j { background-color: var(--background-secondary); }
-.footer-3mqk7D      { background-color: var(--background-primary); }
+.uploadModal-2ifh8j { background-color: var(--background-secondary) !important; }
+.footer-3mqk7D      { background-color: var(--background-primary) !important; }
 
 /* Keyshortcuts modal */
 .keyboardShortcutsModal-3piNz7 { background-color: var(--background-primary); }
