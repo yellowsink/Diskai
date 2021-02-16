@@ -191,8 +191,8 @@ $light-header-secondary: #bbb; /* Wait this is actually the stock value */
 |           Settings            |
 \*******************************/
 /* settings close icon */
-.keybind-KpFkfr     { color:        #{$monokai-red}; }
-.closeButton-1tv5uR { border-color: #{$monokai-red}; }
+.keybind-KpFkfr     { color:        #{$monokai-red} !important; }
+.closeButton-1tv5uR { border-color: #{$monokai-red} !important; }
 
 /* settings remove text */
 .lookLink-9FtZy-.colorPrimary-3b3xI6 { color: #{$monokai-red}; }
