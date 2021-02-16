@@ -4,7 +4,7 @@ Isn’t Monokai just a wonderful colour scheme? Let’s make a Discord theme aro
 
 Main development target will be Powercord because BetterDiscord is broken on canary at the moment (2021-01-30).
 
-I may add support for BBD if I get around to it.
+~~I may add support for BBD if I get around to it.~~ This theme has some features that are enabled with SASS. If you want to use this with BetterDiscord, set your [optional features](#optional-features), then compile it yourself.
 
 # Optional Features
 
