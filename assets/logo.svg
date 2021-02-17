@@ -46,7 +46,7 @@
      inkscape:cx="267.27389"
      inkscape:cy="522.83428"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -96,17 +96,15 @@
      id="layer3"
      inkscape:label="Layer 3"
      style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:256.584px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256584;filter:url(#filter2017)"
-       x="14.345099"
-       y="229.72253"
+    <g
+       aria-label="D"
+       transform="matrix(1.006994,0,0,0.99260441,16.433416,0.02804661)"
        id="text847"
-       transform="matrix(1.006994,0,0,0.99260441,16.433416,0.02804661)"><tspan
-         sodipodi:role="line"
-         id="tspan845"
-         x="14.345099"
-         y="229.72253"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:256.584px;font-family:sans-serif;-inkscape-font-specification:sans-serif;opacity:1;fill:#f6f6ef;fill-opacity:1;stroke-width:0.256584">D</tspan></text>
+       style="font-style:normal;font-weight:normal;font-size:256.584px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256584;filter:url(#filter2017)">
+      <path
+         d="m 197.01087,136.63566 q 0,25.43289 -11.15038,46.10494 -11.0251,20.67205 -29.44202,32.073 -12.77908,7.89297 -28.56501,11.40095 -15.66065,3.50798 -41.344106,3.50798 H 39.402132 V 43.172926 h 46.606081 q 27.312167,0 43.348667,4.009125 16.16179,3.88384 27.31217,10.774524 19.04334,11.902091 29.69258,31.697146 10.64924,19.795059 10.64924,46.981939 z m -25.93403,-0.37586 q 0,-21.9249 -7.6424,-36.959121 -7.64239,-15.03422 -22.8019,-23.678896 -11.02509,-6.264258 -23.42832,-8.644676 -12.40323,-2.505704 -29.692585,-2.505704 H 64.208595 V 208.42406 h 23.30304 q 17.915775,0 31.196005,-2.63099 13.40551,-2.63099 24.55589,-9.77224 13.90666,-8.89525 20.79734,-23.42833 7.01597,-14.53308 7.01597,-36.3327 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:256.584px;font-family:sans-serif;-inkscape-font-specification:sans-serif;opacity:1;fill:#f6f6ef;fill-opacity:1;stroke-width:0.256584"
+         id="path839" />
+    </g>
   </g>
 </svg>
