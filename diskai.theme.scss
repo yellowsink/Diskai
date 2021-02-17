@@ -281,6 +281,15 @@ $disable-mention-theming: false;
 	border-color: var(--monokai-red);
 }
 
+/* Nitro settings button */
+[aria-controls="Discord Nitro-tab"] {
+	color: var(--monokai-purple) !important;
+}
+[aria-controls="Discord Nitro-tab"]:hover {
+	color: var(--interactive-normal) !important;
+	background-color: var(--monokai-purple) !important;
+}
+
 /* Filled buttons*/
 .lookFilled-1Gx00P {
 	color: var(--text-normal) !important;
