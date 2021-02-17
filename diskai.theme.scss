@@ -578,6 +578,13 @@ $disable-mention-theming: false;
 	}
 }
 
+/* Version message */
+.info-1VyQPT .colorMuted-HdFt4q:last-child::after {
+	content: "Diskai 1.0 (git master)";
+	display: block;
+	text-transform: none;
+}
+
 /*******************************\
 |      stuff stolen from        |
 |     #css-snippets in the      |
