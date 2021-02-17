@@ -1,4 +1,5 @@
 {
+    "icon": "assets/logo.png",
     "name": "Diskai",
     "description": "A Discord theme for Monokai lovers",
     "version": "1.0.0",
