@@ -12,6 +12,7 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - Strikethrough muted channels and categories
 - Hide the help button (top right)
 - [Nicer image spoilers](https://discord.com/channels/538759280057122817/755005803303403570/811210109405495316) (made to look like iOS image spoilers)
+- Coloured channel hashtags - removes the unread pill and channel text colours, and shows unread / selected channels by colouring the hashtag icon.
 
 Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (this shows the defaults)
 ```scss
@@ -22,6 +23,7 @@ Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (
 $strikethrough-mute: true;
 $hide-help: true;
 $ios-image-spoilers: true;
+$coloured-channel-hashtags: true;
 ```
 
 # I want to customise it!!!

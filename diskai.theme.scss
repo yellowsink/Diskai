@@ -8,6 +8,7 @@
 $strikethrough-mute: true;
 $hide-help: true;
 $ios-image-spoilers: true;
+$coloured-channel-hashtags: true;
 
 :root {
 	/*******************************\
@@ -383,6 +384,32 @@ $ios-image-spoilers: true;
 
 /* Mentions */
 .mentioned-xhSam7::before { background-color: var(--monokai-yellow); }
+
+@if $coloured-channel-hashtags {
+	/* Channels */
+	.unread-2lAfLh {
+		visibility: hidden;
+	}
+
+	.modeUnread-1qO3K1 .name-23GUGE,
+	.mainContent-u_9PKf:hover .name-23GUGE,
+	.name-23GUGE {
+		color: var(--channels-default);
+	}
+
+	.modeSelected-346R90 .name-23GUGE,
+	.modeSelected-346R90:hover .name-23GUGE {
+		color: var(--text-normal);
+	}
+
+	.modeUnread-1qO3K1 .iconContainer-1BBaeJ path {
+		fill: var(--interactive-active);
+	}
+
+	.modeSelected-346R90 .iconContainer-1BBaeJ path {
+		fill: var(--text-normal);
+	}
+}
 
 
 
