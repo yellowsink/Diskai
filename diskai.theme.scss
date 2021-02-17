@@ -10,6 +10,7 @@ $hide-help: true;
 $ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
+$transitions: true;
 
 :root {
 	/*******************************\
@@ -493,6 +494,41 @@ $disable-mention-theming: false;
 .colorDanger-2qLCe1.focused-3afm-j {
 	background-color: var(--monokai-red);
 	color: var(--text-normal);
+}
+
+@if $transitions {
+	/* Fades!!! */
+	.item-PXvHYJ,
+	.item-1tOPte,
+	.layout-2DM8Md,
+	.containerDefault--pIXnN *,
+	.member-3-YXUe,
+	.member-3-YXUe *,
+	.message-2qnXI6,
+	.buttons-cl5qTG *,
+	.result-oB0z--,
+	button,
+	button svg *,
+	.clickable-3rdHwn path,
+	.iconItem-F7GRxr path,
+	.overflow-WK9Ogt,
+	.winButton-iRh8-Z,
+	.avatar-SmRMf2 {
+		transition: background-color 0.17s ease, color 0.17s ease, fill 0.17s ease, opacity 0.17s ease;
+	}
+}
+
+.searchBar-3dMhjb {
+	transition: width 0.3s ease;
+}
+
+.containerDefault--pIXnN.selected-3LIHYU .iconItem-F7GRxr,
+.containerDefault--pIXnN:hover .iconItem-F7GRxr {
+	opacity: 1;
+}
+.iconItem-F7GRxr {
+	display: block;
+	opacity: 0;
 }
 
 /* The rectangle message box breaks the upload dialog border-radius */
