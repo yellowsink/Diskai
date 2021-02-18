@@ -9,7 +9,7 @@ $strikethrough-mute: true;
 $hide-help: true;
 $ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
-$disable-mention-theming: false;
+$disable-mention-theming: true;
 $transitions: true;
 
 :root {
@@ -505,7 +505,7 @@ $transitions: true;
 	.member-3-YXUe,
 	.member-3-YXUe *,
 	.message-2qnXI6,
-	.buttons-cl5qTG *,
+	.buttonContainer-DHceWr *,
 	.result-oB0z--,
 	button,
 	button svg *,
