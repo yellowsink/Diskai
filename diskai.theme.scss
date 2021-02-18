@@ -357,9 +357,9 @@ $transition-duration: .17s;
 }
 
 /* Switches */
-/*.container-3auIfb {
+.container-3auIfb[style="opacity: 1; background-color: rgb(67, 181, 129);"] {
 	background-color: var(--monokai-green) !important;
-} */ /* TODO: This forces them to be always green - find a fix. */
+} // Janky but it'll do
 
 /* Beta text */
 .beta-3smTDE {
@@ -427,8 +427,6 @@ $transition-duration: .17s;
 }
 
 @if not($disable-mention-theming) {
-	/
-
 	/* #channels and @mentions */
 	.wrapper-3WhCwL {
 		color: var(--diskai-mention-colour);
@@ -530,7 +528,10 @@ $transition-duration: .17s;
 	.header-2-Imhb .tab-ck0077,
 	.privateChannelsHeaderContainer-3NB1K1,
 	.rowWrapper-2fB6P0,
-	.rowWrapper-2fB6P0 .nameBodyCell-3JOlnK {
+	.rowWrapper-2fB6P0 .nameBodyCell-3JOlnK,
+	.item-26Dhrx,
+	.item-26Dhrx path,
+	.header-2BwW8b {
 		transition: background-color #{$transition-duration} ease,
 			color #{$transition-duration} ease,
 			fill #{$transition-duration} ease,
@@ -662,14 +663,6 @@ $transition-duration: .17s;
 	content: "Diskai 1.0 (git master)";
 	display: block;
 	text-transform: none;
-}
-
-/* Slowmode icon */
-.cooldownWrapper-3joyFc {
-	color: transparent !important;
-}
-.slowModeIcon-1BPDC_ {
-	color: #fff;
 }
 
 /*******************************\
