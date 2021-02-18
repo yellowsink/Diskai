@@ -506,6 +506,7 @@ $transitions: true;
 	.channel-2QD9_O .subtext-1RtU34,
 	.closeButton-2GCmT5 svg,
 	.containerDefault--pIXnN *,
+	.categoryItem-3zFJns,
 	.member-3-YXUe,
 	.member-3-YXUe *,
 	.message-2qnXI6,
@@ -647,6 +648,10 @@ $transitions: true;
 	display: block;
 	text-transform: none;
 }
+
+/* Slowmode icon */
+.cooldownWrapper-3joyFc { color: transparent !important; }
+.slowModeIcon-1BPDC_ { color: #fff; }
 
 /*******************************\
 |      stuff stolen from        |
