@@ -14,7 +14,7 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - [Nicer image spoilers](https://discord.com/channels/538759280057122817/755005803303403570/811210109405495316) (made to look like iOS image spoilers)
 - Coloured channel hashtags - removes the unread pill and channel text colours, and shows unread / selected channels by colouring the hashtag icon.
 - Disable mention theming because with some plugins such as [this one](https://github.com/A-User-s-Discord-Plugins/role-colors) makes it look bad.
-- Add transitions on loads of stuff to \~\~smooth~~ out your Discord experience.
+- Add transitions on loads of stuff to \~\~smooth~~ out your Discord experience (and change the duration).
 
 Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (this shows the defaults)
 ```scss
@@ -28,6 +28,7 @@ $ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
+$transition-duration: .17s;
 ```
 
 # I want to customise it!!!

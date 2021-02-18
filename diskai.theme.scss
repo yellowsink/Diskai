@@ -11,6 +11,7 @@ $ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
+$transition-duration: .17s;
 
 :root {
 	/*******************************\
@@ -420,7 +421,7 @@ $transitions: true;
 }
 
 @if not($disable-mention-theming) {
-/
+	/
 
 	/* #channels and @mentions */
 	.wrapper-3WhCwL {
@@ -520,8 +521,14 @@ $transitions: true;
 	.winButton-iRh8-Z,
 	.avatar-SmRMf2,
 	.button-1-5Aqk,
-	.header-2-Imhb .tab-ck0077 {
-		transition: background-color .17s ease, color .17s ease, fill .17s ease, opacity .17s ease;
+	.header-2-Imhb .tab-ck0077,
+	.privateChannelsHeaderContainer-3NB1K1,
+	.rowWrapper-2fB6P0,
+	.rowWrapper-2fB6P0 .nameBodyCell-3JOlnK {
+		transition: background-color #{$transition-duration} ease,
+			color #{$transition-duration} ease,
+			fill #{$transition-duration} ease,
+			opacity #{$transition-duration} ease;
 	}
 
 	.channel-2QD9_O .name-uJV0GL,
@@ -534,11 +541,13 @@ $transitions: true;
 		color: var(--text-normal);
 	}
 
-	.textRuler-wO-qHe { display: none; }
-}
+	.textRuler-wO-qHe {
+		display: none;
+	}
 
-.searchBar-3dMhjb {
-	transition: width 0.3s ease;
+	.searchBar-3dMhjb {
+		transition: width calc(2 * #{$transition-duration}) ease;
+	}
 }
 
 .containerDefault--pIXnN.selected-3LIHYU .iconItem-F7GRxr,
@@ -650,8 +659,12 @@ $transitions: true;
 }
 
 /* Slowmode icon */
-.cooldownWrapper-3joyFc { color: transparent !important; }
-.slowModeIcon-1BPDC_ { color: #fff; }
+.cooldownWrapper-3joyFc {
+	color: transparent !important;
+}
+.slowModeIcon-1BPDC_ {
+	color: #fff;
+}
 
 /*******************************\
 |      stuff stolen from        |
