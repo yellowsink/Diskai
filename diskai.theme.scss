@@ -258,6 +258,11 @@ $transition-duration: .17s;
 	color: var(--monokai-red);
 }
 
+/* Currently speaking bar */
+.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {
+	background-color: var(--monokai-green);
+}
+
 /* Changelog text */
 .improved-1NJK-y {
 	color: var(--monokai-purple);
@@ -287,8 +292,9 @@ $transition-duration: .17s;
 [aria-controls="Discord Nitro-tab"] {
 	color: var(--monokai-purple) !important;
 }
-[aria-controls="Discord Nitro-tab"]:hover {
-	color: var(--interactive-normal) !important;
+[aria-controls="Discord Nitro-tab"]:hover,
+[aria-controls="Discord Nitro-tab"][aria-selected="true"] {
+	color: var(--interactive-hover) !important;
 	background-color: var(--monokai-purple) !important;
 }
 
