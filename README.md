@@ -28,7 +28,7 @@ $ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
-$transition-duration: .17s;
+$transition-duration: .2s;
 ```
 
 # I want to customise it!!!
