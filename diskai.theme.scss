@@ -245,6 +245,13 @@ $transition-duration: .5s;
 }
 
 /* TODO: figure out how to theme the search popup: https://canary.discord.com/channels/538759280057122817/755015869914152981/805079836720234526 */
+.container-3ayLPN {
+    background-color: var(--background-secondary) !important;
+}
+
+.option-96V44q::after {
+    display: none;
+}
 
 /* Notification bell strikethrough */
 .strikethrough-3Wiitd {
@@ -321,6 +328,19 @@ $transition-duration: .5s;
     .featureGrid-3-fNl- {
         grid-template-columns: repeat(3, 206px);
     }
+}
+
+// Add game popup
+.addGamePopout-2RY8Ju {
+    background-color: var(--background-secondary) !important;
+}
+
+.select-2TCrqx {
+    background-color: var(--background-primary);
+}
+
+.css-3vaxre-menu {
+    background-color: var(--background-tertiary);
 }
 
 /* red outline settings buttons */
@@ -608,7 +628,8 @@ $transition-duration: .5s;
     .rowWrapper-2fB6P0 .nameBodyCell-3JOlnK,
     .item-26Dhrx,
     .item-26Dhrx path,
-    .header-2BwW8b {
+    .header-2BwW8b,
+    .css-3vaxre-menu * {
         transition: background-color #{$transition-duration} ease,
         color #{$transition-duration} ease,
         fill #{$transition-duration} ease,
