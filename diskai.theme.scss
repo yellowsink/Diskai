@@ -38,6 +38,7 @@ $transition-duration: 0.2s;
 	--diskai-muted-purple: #9567e4;
 	--diskai-turquoise: #0bda97;
 	--diskai-dark-green: #79b814;
+    --diskai-muted-green: #2e8d02;
 	--diskai-muted-white: #888;
 
 	/*******************************\
@@ -343,6 +344,14 @@ $transition-duration: 0.2s;
 
 .css-3vaxre-menu {
 	background-color: var(--background-tertiary);
+}
+
+// Playing game banner
+.notDetected-33MY4s {
+    background-color: var(--background-tertiary) !important;
+}
+.nowPlaying-284llR {
+   background-color: var(--diskai-muted-green) !important;
 }
 
 /* red outline settings buttons */
