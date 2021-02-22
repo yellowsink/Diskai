@@ -12,7 +12,7 @@ $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
 $transition-duration: 0.2s;
-$compact: false;
+$compact: true;
 $new-user-card: true;
 
 :root {
@@ -774,7 +774,7 @@ $new-user-card: true;
 
 /* Version message */
 .info-1VyQPT .colorMuted-HdFt4q:last-child::after {
-	content: "Diskai 1.1r2 (git master)";
+	content: "Diskai 1.1r3 (git master)";
 	display: block;
 	text-transform: none;
 }
@@ -786,8 +786,10 @@ $new-user-card: true;
 
 @if $compact {
 	// Channel list
-	.content-3YMskv .containerDefault--pIXnN .wrapper-2jXpOf { padding: 0; }
-	.content-3YMskv .containerDefault-3tr_sE { padding-top: .5rem; }
+	.content-3YMskv {
+		.containerDefault--pIXnN .wrapper-2jXpOf { padding: 0; }
+		.containerDefault-3tr_sE { padding-top: .5rem; }
+	}
 	// Messages in cozy mode
 	.cozy-3raOZG .header-23xsNx { margin-bottom: 0; }
 	// Members list
@@ -796,10 +798,12 @@ $new-user-card: true;
 	.header-2V-4Sw, .title-3qD0b- { height: 2.5rem; }
 	// Unreads & mentions
 	.recentMentionsPopout-3rCiI6 .header-ykumBX { height: 3rem; min-height: 3rem; padding-top: .5rem; padding-bottom: 0; }
-	.container-3iAQ-0 { margin-bottom: 0; }
-	.container-3iAQ-0 .messageContainer-gbhlwo { padding: .5rem 0; }
+	.container-3iAQ-0 { 
+		margin-bottom: 0; 
+		.messageContainer-gbhlwo { padding: .5rem 0; }
+	}
 	// Pinned messages
-	.messagesPopoutWrap-1MQ1bW .header-ykumBX { height: 2rem; min-height: 2rem; padding-top: .5rem; padding-bottom: 0; }
+	.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-3rCiI6) .header-ykumBX { height: 2rem; min-height: 2rem; padding-top: .5rem; padding-bottom: 0; }
 	// Channel info modal
 	.modal-3O0aXp { min-height: 150px; }
 	.modal-3O0aXp > div { padding: .5rem 16px; }
@@ -818,6 +822,26 @@ $new-user-card: true;
 	.profile-1eT9hT { margin: 0 1rem .5rem 1rem; }
 	@if not($new-user-card) {
 		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
+	}
+	// Profile popout
+	.userPopout-3XzG_A {
+		.activityUserPopout-2yItg2,
+		.body-3iLsc4 { padding: .75rem; }
+		.footer-1fjuF6,
+		.roleCircle-3xAZ1j,
+		.bodyTitle-Y0qMQz { display: none; }
+		.rolesList-22qj2L { margin: .5rem 0; }
+		.roleName-32vpEy { margin-left: 4px; }
+		.textarea-2r0oV8 { height: calc(34px / 1.5) !important; }
+
+		max-height: calc(100vh - 5rem);
+
+		.headerTop-3C2Zn0 {
+			padding: 0.5rem;
+			flex-flow: row wrap;
+			.avatarWrapperNormal-3wFMbf { margin: 0 .5rem 0 0; }
+			.headerTag-2pZJzA, .customStatus-1bh2V9 { margin-top: .5rem; }
+		}
 	}
 }
 
