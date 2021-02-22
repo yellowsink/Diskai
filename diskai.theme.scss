@@ -1,5 +1,5 @@
 // Optional Features
-@import "_features";
+@use "features" as *;
 
 /* Monokai Highlight.js because of course */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");

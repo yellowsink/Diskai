@@ -20,10 +20,6 @@ Diskai comes with some optional features that can be enabled and disabled easily
 
 Enable / Disable by editing the variables in `_features.scss`: (this shows the defaults)
 ```scss
-/*******************************\
-|       OPTIONAL FEATURES       |
-\*******************************/
-
 $strikethrough-mute: true;
 $hide-help: true;
 $ios-image-spoilers: true;
