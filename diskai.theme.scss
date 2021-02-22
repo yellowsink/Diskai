@@ -846,7 +846,7 @@ $new-user-card: true;
 	// Profile
 	.listScroller-2_vlfo {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(auto-fit, 3.5rem);
 
 		.empty-2WtT5s {
