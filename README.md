@@ -15,6 +15,8 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - Coloured channel hashtags - removes the unread pill and channel text colours, and shows unread / selected channels by colouring the hashtag icon.
 - Disable mention theming because with some plugins such as [this one](https://github.com/A-User-s-Discord-Plugins/role-colors) makes it look bad.
 - Add transitions on loads of stuff to \~\~smooth~~ out your Discord experience (and change the duration).
+- Compact mode: lots of tweaks to make Discord fit more info into less space!
+- New User Card: A [refreshed design](https://thicc-anime.thigh.pics/CA1e57F.png) for the user card in settings
 
 Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (this shows the defaults)
 ```scss
@@ -29,6 +31,8 @@ $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
 $transition-duration: .2s;
+$compact: false;
+$new-user-card: true;
 ```
 
 # I want to customise it!!!
