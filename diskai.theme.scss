@@ -774,7 +774,7 @@ $new-user-card: true;
 
 /* Version message */
 .info-1VyQPT .colorMuted-HdFt4q:last-child::after {
-	content: "Diskai 1.1b4 (git master)";
+	content: "Diskai 1.1 (git master)";
 	display: block;
 	text-transform: none;
 }
@@ -830,7 +830,7 @@ $new-user-card: true;
 		.footer-1fjuF6,
 		.roleCircle-3xAZ1j,
 		.bodyTitle-Y0qMQz { display: none; }
-		.rolesList-22qj2L { margin: .5rem 0; }
+		.rolesList-22qj2L { margin: .5rem 0; justify-content: center; }
 		.roleName-32vpEy { margin-left: 4px; }
 		.textarea-2r0oV8 { height: calc(34px / 1.5) !important; }
 
