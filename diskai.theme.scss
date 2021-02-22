@@ -774,7 +774,7 @@ $new-user-card: true;
 
 /* Version message */
 .info-1VyQPT .colorMuted-HdFt4q:last-child::after {
-	content: "Diskai 1.1b3 (git master)";
+	content: "Diskai 1.1b4 (git master)";
 	display: block;
 	text-transform: none;
 }
@@ -841,6 +841,16 @@ $new-user-card: true;
 			flex-flow: row wrap;
 			.avatarWrapperNormal-3wFMbf { margin: 0 .5rem 0 0; }
 			.headerTag-2pZJzA, .customStatus-1bh2V9 { margin-top: .5rem; }
+		}
+	}
+	// Profile
+	.listScroller-2_vlfo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(auto-fit, 3.5rem);
+
+		.empty-2WtT5s {
+			grid-column: span 2;
 		}
 	}
 }
