@@ -18,7 +18,7 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - Compact mode: lots of tweaks to make Discord fit more info into less space!
 - New User Card: A [refreshed design](https://thicc-anime.thigh.pics/CA1e57F.png) for the user card in settings
 
-Enable / Disable by editing the variables in your copy of `diskai.theme.scss`: (this shows the defaults)
+Enable / Disable by editing the variables in `_features.scss`: (this shows the defaults)
 ```scss
 /*******************************\
 |       OPTIONAL FEATURES       |

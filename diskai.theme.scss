@@ -1,19 +1,8 @@
+// Optional Features
+@import "_features";
+
 /* Monokai Highlight.js because of course */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");
-
-/*******************************\
-|       OPTIONAL FEATURES       |
-\*******************************/
-
-$strikethrough-mute: true;
-$hide-help: true;
-$ios-image-spoilers: true;
-$coloured-channel-hashtags: true;
-$disable-mention-theming: false;
-$transitions: true;
-$transition-duration: 0.2s;
-$compact: false;
-$new-user-card: true;
 
 :root {
 	/*******************************\
