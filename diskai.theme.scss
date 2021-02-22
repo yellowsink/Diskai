@@ -12,6 +12,7 @@ $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
 $transition-duration: 0.2s;
+$compact: false;
 $new-user-card: true;
 
 :root {
@@ -773,7 +774,7 @@ $new-user-card: true;
 
 /* Version message */
 .info-1VyQPT .colorMuted-HdFt4q:last-child::after {
-	content: "Diskai 1.1r1 (git master)";
+	content: "Diskai 1.1r2 (git master)";
 	display: block;
 	text-transform: none;
 }
@@ -781,6 +782,43 @@ $new-user-card: true;
 // Edit message buttons
 .operations-36ENbA > a {
 	color: var(--diskai-accent-colour);
+}
+
+@if $compact {
+	// Channel list
+	.content-3YMskv .containerDefault--pIXnN .wrapper-2jXpOf { padding: 0; }
+	.content-3YMskv .containerDefault-3tr_sE { padding-top: .5rem; }
+	// Messages in cozy mode
+	.cozy-3raOZG .header-23xsNx { margin-bottom: 0; }
+	// Members list
+	.membersGroup-v9BXpm { padding-top: .5rem; height: 1.5rem; }
+	// Slim header
+	.header-2V-4Sw, .title-3qD0b- { height: 2.5rem; }
+	// Unreads & mentions
+	.recentMentionsPopout-3rCiI6 .header-ykumBX { height: 3rem; min-height: 3rem; padding-top: .5rem; padding-bottom: 0; }
+	.container-3iAQ-0 { margin-bottom: 0; }
+	.container-3iAQ-0 .messageContainer-gbhlwo { padding: .5rem 0; }
+	// Pinned messages
+	.messagesPopoutWrap-1MQ1bW .header-ykumBX { height: 2rem; min-height: 2rem; padding-top: .5rem; padding-bottom: 0; }
+	// Channel info modal
+	.modal-3O0aXp { min-height: 150px; }
+	.modal-3O0aXp > div { padding: .5rem 16px; }
+	.content-1LAB8Z .content-38qMG0 { padding: 0; }
+	// Context menus
+	.item-1tOPte { padding: .2rem; min-height: 1.75rem; }
+	// Settings
+	// Buttons
+	.marginTop40-i-78cZ { margin-top: 30px; }
+	.defaultMarginh2-2LTaUL,
+	.marginBottom20-32qID7 { margin-bottom: 10px; }
+	.changePasswordButton-1LGVWT { margin-bottom: 30px; }
+	// User card
+	.fieldList-21DyL8 .fieldSpacer-wgewFh { margin-top: .75rem; }
+	.background-1QDuV2 { padding: .5rem; }
+	.profile-1eT9hT { margin: 0 1rem .5rem 1rem; }
+	@if not($new-user-card) {
+		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
+	}
 }
 
 @if $new-user-card {
