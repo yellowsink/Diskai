@@ -878,6 +878,14 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 	.profileBadgeWrapper-1rGSsp { margin: 0 6px; }
 }
 
+// Fix announcement channel box with bettermessagebox
+.wrapper-39oAo3 {
+	margin: 0;
+	padding-bottom: 16px + 1px; // default value, and 1px extra to make it fit with the userarea
+	border-radius: 0;
+	background-color: var(--channeltextarea-background);
+}
+
 /*******************************\
 |      stuff stolen from        |
 |     #css-snippets in the      |
