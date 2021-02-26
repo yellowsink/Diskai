@@ -4,6 +4,16 @@
 /* Monokai Highlight.js because of course */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css");
 
+// compact mode
+
+@if $compact {
+	@import url("https://cdn.jsdelivr.net/gh/cainy-a/smolcord@master/smol.theme.css");
+	
+	@if not($new-user-card) {
+		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
+	}
+}
+
 
 // Hooks for plugins. I feel like these are the two that'd be useful
 // sample JS code suitable for plugins on ANY client mod:
@@ -792,77 +802,6 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 // Edit message buttons
 .operations-36ENbA > a {
 	color: var(--diskai-accent-colour);
-}
-
-@if $compact {
-	// Channel list
-	.content-3YMskv {
-		.containerDefault--pIXnN .wrapper-2jXpOf { padding: 0; }
-		.containerDefault-3tr_sE { padding-top: .5rem; }
-	}
-	// Messages in cozy mode
-	.cozy-3raOZG .header-23xsNx { margin-bottom: 0; }
-	// Members list
-	.membersGroup-v9BXpm { padding-top: .5rem; height: 1.5rem; }
-	// Slim header
-	.header-2V-4Sw, .title-3qD0b- { height: 2.5rem; }
-	// Unreads & mentions
-	.recentMentionsPopout-3rCiI6 .header-ykumBX { height: 3rem; min-height: 3rem; padding-top: .5rem; padding-bottom: 0; }
-	.container-3iAQ-0 { 
-		margin-bottom: 0; 
-		.messageContainer-gbhlwo { padding: .5rem 0; }
-	}
-	// Pinned messages
-	.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-3rCiI6) .header-ykumBX { height: 2rem; min-height: 2rem; padding-top: .5rem; padding-bottom: 0; }
-	// Channel info modal
-	.modal-3O0aXp { min-height: 150px; }
-	.modal-3O0aXp > div { padding: .5rem 16px; }
-	.content-1LAB8Z .content-38qMG0 { padding: 0; }
-	// Context menus
-	.item-1tOPte { padding: .2rem; min-height: 1.75rem; }
-	// Settings
-	// Buttons
-	.marginTop40-i-78cZ { margin-top: 30px; }
-	.defaultMarginh2-2LTaUL,
-	.marginBottom20-32qID7 { margin-bottom: 10px; }
-	.changePasswordButton-1LGVWT { margin-bottom: 30px; }
-	// User card
-	.fieldList-21DyL8 .fieldSpacer-wgewFh { margin-top: .75rem; }
-	.background-1QDuV2 { padding: .5rem; }
-	.profile-1eT9hT { margin: 0 1rem .5rem 1rem; }
-	@if not($new-user-card) {
-		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
-	}
-	// Profile popout
-	.userPopout-3XzG_A {
-		.activityUserPopout-2yItg2,
-		.body-3iLsc4 { padding: .75rem; }
-		.footer-1fjuF6,
-		.roleCircle-3xAZ1j,
-		.bodyTitle-Y0qMQz { display: none; }
-		.rolesList-22qj2L { margin: .5rem 0; justify-content: center; }
-		.roleName-32vpEy { margin-left: 4px; }
-		.textarea-2r0oV8 { height: calc(34px / 1.5) !important; }
-
-		max-height: calc(100vh - 5rem);
-
-		.headerTop-3C2Zn0 {
-			padding: 0.5rem;
-			flex-flow: row wrap;
-			.avatarWrapperNormal-3wFMbf { margin: 0 .5rem 0 0; }
-			.headerTag-2pZJzA, .customStatus-1bh2V9 { margin-top: .5rem; }
-		}
-	}
-	// Profile
-	.listScroller-2_vlfo {
-		display: grid;
-		grid-template-columns: repeat(2, 50%);
-		grid-template-rows: repeat(auto-fit, 3.5rem);
-
-		.empty-2WtT5s {
-			grid-column: span 2;
-		}
-	}
 }
 
 @if $new-user-card {
