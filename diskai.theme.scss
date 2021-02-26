@@ -730,9 +730,7 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 }
 
 /* Invite to this channel button */
-.iconItem-F7GRxr path {
-	fill: var(--text-link);
-}
+.iconItem-F7GRxr path { fill: var(--diskai-accent-colour); }
 
 @if $hide-help {
 	/* Go away help button */
