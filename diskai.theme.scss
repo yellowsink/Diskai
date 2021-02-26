@@ -9,7 +9,10 @@
 @if $compact {
 	@import url("https://cainy-a.github.io/SmolCord/smol.theme.css");
 	
-	@if not($new-user-card) {
+	@if $new-user-card {
+		.details-2fkb7l, .badgeList-HtCfKd, .menu-319q29 { margin-top: 4px; }
+	}
+	@else {
 		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
 	}
 }
@@ -809,10 +812,12 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 	.avatarUploader-3XDtmn { margin-top: auto; margin-bottom: auto; }
 	.menu-319q29 { margin: 0; }
 	.fieldList-21DyL8 { flex: 1; margin: 0; }
-	.profile-1eT9hT { margin: .5rem 2.5rem 1rem 2.5rem; flex-flow: column nowrap; }
+	.profile-1eT9hT { margin: .5rem 2.5rem; flex-flow: column nowrap; }
 	.details-2fkb7l { margin-left: 0; }
 	.badgeList-HtCfKd { align-items: center; flex-flow: column wrap; }
 	.profileBadgeWrapper-1rGSsp { margin: 0 6px; }
+
+	.details-2fkb7l, .badgeList-HtCfKd, .menu-319q29 { margin-top: .5rem; }
 }
 
 // Fix announcement channel box with bettermessagebox
