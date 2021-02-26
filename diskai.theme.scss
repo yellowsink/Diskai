@@ -7,7 +7,7 @@
 // compact mode
 
 @if $compact {
-	@import url("https://cdn.jsdelivr.net/gh/cainy-a/smolcord@master/smol.theme.css");
+	@import url("https://cainy-a.github.io/SmolCord/smol.theme.css");
 	
 	@if not($new-user-card) {
 		.profile-1eT9hT { margin-left: 0; margin-top: .2rem; }
