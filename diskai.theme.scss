@@ -828,6 +828,9 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 	background-color: var(--channeltextarea-background);
 }
 
+// Unreads PROTIP
+.colorStatusGreen-2saF4_ { color: var(--diskai-accent-colour); }
+
 /*******************************\
 |      stuff stolen from        |
 |     #css-snippets in the      |
@@ -862,11 +865,11 @@ https://discord.com/channels/538759280057122817/755005803303403570/8046659238015
 }
 
 /*
-Jump to bottom pill UPDATE
+Jump to bottom pill
 by me!
 https://discord.com/channels/538759280057122817/755005803303403570/805724588277104680
 */
-.barButtonMain-3K-jeJ {
+.jumpToPresentBar-G1R9s6 .barButtonMain-3K-jeJ {
 	display: none;
 }
 
@@ -876,7 +879,7 @@ https://discord.com/channels/538759280057122817/755005803303403570/8057245882771
 	right: 12px;
 }
 
-.barButtonAlt-mYL1lj {
+.jumpToPresentBar-G1R9s6 .barButtonAlt-mYL1lj {
 	float: right;
 	bottom: 1.6rem;
 	border-radius: 0.7rem 0 0 0.7rem;
