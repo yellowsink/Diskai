@@ -831,6 +831,15 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 // Unreads PROTIP
 .colorStatusGreen-2saF4_ { color: var(--diskai-accent-colour); }
 
+// Powercord / Vizality Updater icons
+.vz-updater-top-section-icon path,
+.powercord-updater .icon path {
+	&[fill="#43b581"] { fill: var(--diskai-dark-green); }
+	&[fill="#faa61a"] { fill: var(--monokai-yellow); }
+	&[fill="#f04747"] { fill: var(--monokai-red); }
+	&[fill="#7289da"] { fill: var(--monokai-purple); }
+}
+
 /*******************************\
 |      stuff stolen from        |
 |     #css-snippets in the      |
