@@ -28,7 +28,7 @@ function getDiskaiPluginHook(hookName) {
 }
 
 const diskaiCompactModeEnabled = getDiskaiPluginHook("compact") == 1;
-const diskaiTransitionsEnabled = getDiskaiPluginHook("transitions") == 0;
+const diskaiTransitionsEnabled = getDiskaiPluginHook("transitions") != 0;
 const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 */
 :root {
