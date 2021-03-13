@@ -840,6 +840,13 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 	&[fill="#7289da"] { fill: var(--monokai-purple); }
 }
 
+// This class was painful to get
+// HTML for those interested: <span class="inner-1gJC7_"><span class="wanderingCubesItem-WPXqao"></span><span class="wanderingCubesItem-WPXqao"></span></span>
+// Loading cubes
+.wanderingCubesItem-WPXqao {
+	background-color: var(--monokai-purple);
+}
+
 /*******************************\
 |      stuff stolen from        |
 |     #css-snippets in the      |
