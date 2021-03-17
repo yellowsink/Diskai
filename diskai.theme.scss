@@ -847,11 +847,14 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 	background-color: var(--monokai-purple);
 }
 
-
 // Command autocomplete parameters
 .colorHeaderPrimary-26Jzh-.active-2awTSY {
 	background-color: var(--header-primary) !important;
 }
+
+// New msg bar, bot tag
+.newMessagesBar-265mhP, .botTag-3W9SuW { background-color: var(--monokai-purple); }
+
 
 /*******************************\
 |      stuff stolen from        |
