@@ -874,6 +874,20 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 // New msg bar, bot tag
 .newMessagesBar-265mhP, .botTag-3W9SuW { background-color: var(--monokai-purple); }
 
+// AMOGUS
+@if $amogus {
+	.sidebarRegionScroller-3MXcoP {
+		margin-left: -10.5rem;
+	
+		&::before {
+			content: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Ffantendo%2Fimages%2Fc%2Fc0%2FAmongUsCrewmate.png%2Frevision%2Flatest%2Fscale-to-width-down%2F175%3Fcb%3D20200919174512&f=1&nofb=1");
+			transform: rotate(30deg);
+		}
+	}
+}
+
+
+
 
 /*******************************\
 |      stuff stolen from        |

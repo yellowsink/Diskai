@@ -18,6 +18,7 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - Compact mode: lots of tweaks to make Discord fit more info into less space! - Powered by [Smolcord](https://github.com/cainy-a/SmolCord).
 - New User Card: A [refreshed design](https://thicc-anime.thigh.pics/CA1e57F.png) for the user card in settings
 - Usrbg: Enable importing [Usrbg](https://github.com/Discord-Custom-Covers/usrbg) for awesome user profile & popout backgrounds
+- Amogus: you are a kool kid™️ and apparently amogus is still funny. [Image](https://cdn.discordapp.com/attachments/690477562857521174/829723641221480498/unknown.png)
 
 Enable / Disable by editing the variables in `_features.scss`: (this shows the defaults)
 ```scss
@@ -31,6 +32,7 @@ $transition-duration: .2s;
 $compact: false;
 $new-user-card: true;
 $usrbg: true;
+$amogus: false;
 ```
 
 # I want to customise it!!!
