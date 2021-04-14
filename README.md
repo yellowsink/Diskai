@@ -29,7 +29,7 @@ $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
 $transition-duration: .2s;
-$compact: false;
+$compact: true;
 $new-user-card: true;
 $usrbg: true;
 $amogus: false;
