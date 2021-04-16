@@ -37,7 +37,7 @@ $amogus: false;
 
 # I want to customise it!!!
 
-**NOTICE: IF YOU PREFER NON-MONOKAI COLOUR SCHEMES, *Diskai Schemes* IS COMING SOON!**
+**Don't like Monokai? Check the `schemes/` folder! Only one theme atm but more soon:tm:**
 
 Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to reference the list of variables.
 
