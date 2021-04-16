@@ -1,0 +1,20 @@
+/* d4nk colour scheme by DanKGooGLy at <https://github.com/DanKGooGLy/d4nk>
+ * for Diskai theme by cainy-a <https://github.com/cainy-a/Diskai>
+ */
+:root {
+	--monokai-black: #282c34 !important; /* OneHalf Black */
+	--monokai-red: #ff6961 !important; /* Pastel Red */
+	--monokai-green: #77dd77 !important; /* Pastel Green */
+	--monokai-yellow: #e8C94e !important; /* Snake Eyes */
+	--monokai-purple: #bf7df2 !important; /* Illicit Purple */
+	--monokai-cyan: #48d1cc !important; /* Medium Turquoise */
+	--monokai-white: #e6e8ec !important;
+	--diskai-light-blue: #95d5e5 !important; /* Orleans Tune */
+
+	--monokai-bright-black: var(-monokai-black) !important;
+	--monokai-bright-yellow: var(--monokai-yellow) !important;
+	--monokai-bright-white: var(-monokai-white) !important;
+	--monokai-background: var(-monokai-black) !important;
+	--monokai-foreground: var(-monokai-white) !important;
+	--diskai-lilac: var(--monokai-purple) !important;
+}
