@@ -5,5 +5,5 @@
     "author": "Yellowsink#8156",
     "theme": "diskai.theme.scss",
     "consent": ["ext_listing"],
-    "license": "BSD-3"
+    "license": "GPL-3.0-or-later"
 }
