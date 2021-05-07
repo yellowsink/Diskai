@@ -26,18 +26,11 @@
 // usrbg
 @if $usrbg {
 	//@import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
-	@import url("https://cdn.jsdelivr.net/gh/cainy-a/usrbg@fix_profile/snippets/modals.css");
+	@import url("https://cdn.jsdelivr.net/gh/yellowsink/usrbg@fix_profile/snippets/modals.css");
 	//@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
-	@import url("https://cdn.jsdelivr.net/gh/cainy-a/usrbg@popout-fix/snippets/userPopouts.css");
+	@import url("https://cdn.jsdelivr.net/gh/yellowsink/usrbg@popout-fix/snippets/userPopouts.css");
 	//@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-	@import url("https://cdn.jsdelivr.net/gh/cainy-a/usrbg@master/dist/usrbg.css");
-
-	[user_by_bdfdb="435026627907420161"],
-	[data-user-id="435026627907420161"],
-	[vz-user-id="435026627907420161"] {
-		// nobody will mind if i just sneak this in here no?
-		--user-background: url('https://i.imgur.com/LfjiaIr.jpg'); 
-	}
+	@import url("https://cdn.jsdelivr.net/gh/yellowsink/usrbg@master/dist/usrbg.cs");
 }
 
 
