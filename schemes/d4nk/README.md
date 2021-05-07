@@ -1,6 +1,6 @@
 # Diskai Schemes: d4nk by [DanKGooGLy](https://github.com/DanKGooGLy)
 
-CSS by [cainy-a](https://github.com/cainy-a), colour theme by dank.
+CSS by [~~cainy-a~~ now yellowsink](https://github.com/yellowsink), colour theme by dank.
 
 ## d4nk README.md
 
