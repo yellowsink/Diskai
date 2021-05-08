@@ -88,6 +88,7 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	/* main BG colours */
 	--background-primary: var(--monokai-black);
 	--background-secondary: #252525;
+	--background-secondary-alt: var(--background-secondary);
 	--background-tertiary: #2b2b2b;
 	--background-accent: #2f2f2f;
 	/* textarea colours */
