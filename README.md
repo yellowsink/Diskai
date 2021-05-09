@@ -39,8 +39,6 @@ $amogus: false;
 
 # I want to customise it!!!
 
-**Don't like Monokai? Check the `schemes/` folder! Only one theme atm but more soon:tm:**
-
 Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to reference the list of variables.
 
 ## Variables list
