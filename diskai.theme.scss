@@ -567,16 +567,16 @@ const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
 
 @if not($disable-mention-theming) {
 	/* #channels and @mentions */
-	.wrapper-3WhCwL {
+	.mention.wrapper-3WhCwL {
 		color: var(--diskai-mention-colour);
 	}
 
-	.wrapper-3WhCwL:hover {
+	.mention.wrapper-3WhCwL:hover {
 		background-color: var(--diskai-mention-colour);
 		color: var(--diskai-mention-text) !important;
 	}
 
-	.wrapper-3WhCwL.mention.interactive:hover {
+	.mention.wrapper-3WhCwL.mention.interactive:hover {
 		background-color: var(--diskai-mention-colour) !important;
 		border-radius: 3px;
 	}
