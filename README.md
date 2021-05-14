@@ -21,6 +21,7 @@ Diskai comes with some optional features that can be enabled and disabled easily
 - New User Card: A [refreshed design](https://thicc-anime.thigh.pics/CA1e57F.png) for the user card in settings
 - Usrbg: Enable importing [Usrbg](https://github.com/Discord-Custom-Covers/usrbg) for awesome user profile & popout backgrounds
 - Amogus: [When the settings panel is sus!!!!!!](https://cdn.discordapp.com/attachments/690477562857521174/829723641221480498/unknown.png)
+- Old Clyde: Revert Clyde to his pre-2021 self :)
 
 Enable / Disable by editing the variables in `_features.scss`: (this shows the defaults)
 ```scss
@@ -35,6 +36,7 @@ $compact: true;
 $new-user-card: true;
 $usrbg: true;
 $amogus: false;
+$old-discord-logo: true;
 ```
 
 # I want to customise it!!!
