@@ -43,13 +43,17 @@ $old-discord-logo: true;
 
 Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to reference the list of variables.
 
+[2021-05-15] Due to Discord's weird rebrand,
+the original Blurple is now a colour choice.
+#bringbackblurple
+
 ## Variables list
 
 ### Global
 
-```css
+```scss
 :root {
-	/* Monokai colours */
+	// Monokai colours
 	--monokai-black: #1a1a1a;
 	--monokai-red: #f4005f;
 	--monokai-green: #98e024;
@@ -62,7 +66,7 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--monokai-bright-white: #f6f6ef;
 	--monokai-background: #1a1a1a;
 	--monokai-foreground: #c4c5b5;
-	/* Diskai colours */
+	// Diskai colours
 	--diskai-pink: #ff4d91;
 	--diskai-light-pink: #ffb3d0;
 	--diskai-lilac: #b26bff;
@@ -71,8 +75,12 @@ Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to
 	--diskai-turquoise: #0bda97;
 	--diskai-dark-green: #79b814;
 	--diskai-muted-white: #888;
+
+	// Very unimportant colours
+	// sad to see this one go and be replaced by #5865F2 :(
+	--old-blurple: #7289DA;
 	
-	/* VERY IMPORTANT CUSTOMISATION VARIABLES */
+	// VERY IMPORTANT CUSTOMISATION VARIABLES
 	--diskai-accent-colour: var(--diskai-dark-green);
 	--diskai-accent-contrast: var(--text-normal);
 	--diskai-mention-colour: var(--monokai-purple);
