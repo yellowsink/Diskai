@@ -25,7 +25,7 @@
 
 // usrbg
 @if $usrbg {
-	@import url(https://cdn.jsdelivr.net/gh/yellowsink/usrbg/dist/usrbg.css);
+	@import url(https://cdn.jsdelivr.net/gh/yellowsink/usrbg@master/dist/usrbg.css);
 	.profileBanner-33-uE1 {
 		height: 150px;
 		background: var(--user-background) no-repeat center / cover;
