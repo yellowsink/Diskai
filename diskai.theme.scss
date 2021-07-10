@@ -28,40 +28,6 @@
   }
 }
 
-// usrbg
-@if $usrbg {
-  @import url(https://cdn.jsdelivr.net/gh/yellowsink/usrbg/dist/usrbg.css);
-  
-  // user popout
-  .profileBanner-33-uE1 {
-    height: 150px;
-    background: var(--user-background) no-repeat center / cover !important;
-  }
-  .avatarPositionNormal-1CZUPk { top: 100px; }
- 
-  // profile modal
-  .header-QKLPzZ {
-    transform: translateZ(0);
-
-	&::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.4;
-      pointer-events: none;
-      background: var(--user-background) center/cover no-repeat;
-      box-shadow: 0 -1.5rem 1.5rem var(--background-tertiary) inset;
-    }
-    .headerInfo-30uryT {
-      position: relative;
-      z-index: 1;
-    }
-  }
-}
-
 // Hooks for plugins. I feel like these are the two that'd be useful
 // sample JS code suitable for plugins on ANY client mod:
 /*
