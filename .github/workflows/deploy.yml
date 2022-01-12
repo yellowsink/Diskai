@@ -1,0 +1,55 @@
+name: Build and deploy
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Prepare environment
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "16"
+
+            - run: npm install --global sass
+
+            - name: Build theme
+              run: sass diskai.theme.scss .dist/diskai.theme.css
+
+            - name: Copy manifests
+              run: |
+                  cp manifest_dist.json .dist/manifest.json
+                  cp powercord_manifest_dist.json .dist/powercord_manifest.json
+                  cp cumcord_theme.json .dist
+
+              # remove everything except `.dist`, then move stuff back into root.
+            - name: Commit changes
+              run: |
+                  for item in *
+                  do
+                    if [ $item != ".dist" ]; then
+                      rm -rf $item
+                    fi
+                  done
+                  rm .gitignore
+                  rm -rf .github
+
+                  mv .dist/* .
+                  rmdir .dist
+
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  git add .
+                  git commit -am "[CI CHORE] Build Diskai update"
+
+            - name: Push to dist branch
+              uses: ad-m/github-push-action@master
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: "dist"
+                  force: true

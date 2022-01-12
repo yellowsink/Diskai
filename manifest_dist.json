@@ -1,0 +1,10 @@
+{
+    "icon": "assets/logo.png",
+    "name": "diskai",
+    "description": "a discord theme for monokai lovers",
+    "version": "1.0.0",
+    "author": "yellowsink#8156",
+    "theme": "diskai.theme.css",
+    "consent": ["ext_listing"],
+    "license": "gpl-3.0-or-later"
+}
