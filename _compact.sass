@@ -1,0 +1,15 @@
+@use "features" as *
+
+@import url(https://cdn.jsdelivr.net/gh/yellowsink/SmolCord@master/smol.theme.css)
+
+// extra on top of SmolCord to fit with user card
+@if $new-user-card
+  .details-3K5sBD,
+  .badgeList-b3Ajmk,
+  .menu-3A7xxX
+    margin-top: 4px
+
+@else
+  .profile-1o7I_1
+    margin-left: 0
+    margin-top: 0.2rem

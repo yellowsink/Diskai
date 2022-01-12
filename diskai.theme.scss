@@ -1,52 +1,17 @@
 // Optional Features
 @use "features" as *;
 
-// Other theme compat
-@import "compat";
-
 // compact mode
-@if $compact {
-  @import url("https://cdn.jsdelivr.net/gh/yellowsink/SmolCord@master/smol.theme.css");
+@import "compact";
 
-  @if $new-user-card {
-    .details-3K5sBD,
-    .badgeList-b3Ajmk,
-    .menu-3A7xxX {
-      margin-top: 4px;
-    }
-  } @else {
-    .profile-1o7I_1 {
-      margin-left: 0;
-      margin-top: 0.2rem;
-    }
-  }
-}
-
-// Hooks for plugins. I feel like these are the two that'd be useful
-// sample JS code suitable for plugins on ANY client mod:
-/*
-function getDiskaiPluginHook(hookName) {
-    return getComputedStyle(document.getElementById("app-mount")) // get :root {}
-        .getPropertyValue(`--diskai-hook-${hookName}`) // get the hook
-        .trim(); // remove leading whitespace
-}
-
-const diskaiCompactModeEnabled = getDiskaiPluginHook("compact") == 1;
-const diskaiTransitionsEnabled = getDiskaiPluginHook("transitions") != 0;
-const diskaiTransitionDuration = getDiskaiPluginHook("transitions");
-*/
-:root {
-  @if $compact {
-    --diskai-hook-compact: 1;
-  } @else {
-    --diskai-hook-compact: 0;
-  }
-
-  @if $transitions {
-    --diskai-hook-transitions: #{$transition-duration};
-  } @else {
-    --diskai-hook-transitions: 0;
-  }
+/**********************************\
+|          ig compat with          |
+|  https://github.com/NYRI4/Comfy  |
+|      ask past me if this is      |
+|        actually useful lol       |
+\**********************************/
+.avatarWrapper-1B9FTW {
+	--avatar-bottom: 5px;
 }
 
 :root {
