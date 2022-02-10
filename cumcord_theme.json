@@ -2,5 +2,10 @@
     "name": "Diskai",
     "description": "A ridiculously customisable Discord theme for Monokai lovers",
     "author": "Yellowsink",
-    "license": "Unlicense"
+    "license": "Unlicense",
+    "media": [
+        "https://raw.githubusercontent.com/yellowsink/Diskai/master/screenshots/Chat.png",
+        "https://raw.githubusercontent.com/yellowsink/Diskai/master/screenshots/User%20Settings.png",
+        "https://raw.githubusercontent.com/yellowsink/Diskai/master/screenshots/Voice Settings.png"
+    ]
 }
