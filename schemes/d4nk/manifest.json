@@ -1,9 +1,0 @@
-{
-    "name": "Diskai scheme - d4nk",
-    "description": "A Discord theme for d4nk lovers",
-    "version": "1.0.0",
-    "author": "Yellowsink#8156 & DanKGooGLy",
-    "theme": "d4nk.diskai.css",
-    "consent": ["ext_listing"],
-    "license": "MIT"
-}

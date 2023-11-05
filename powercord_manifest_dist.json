@@ -1,9 +1,0 @@
-{
-    "name": "Diskai",
-    "description": "A Discord theme for Monokai lovers",
-    "version": "1.0.0",
-    "author": "Yellowsink#8156",
-    "theme": "diskai.theme.css",
-    "consent": ["ext_listing"],
-    "license": "GPL-3.0-or-later"
-}
