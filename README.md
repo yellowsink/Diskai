@@ -1,51 +1,34 @@
 # Diskai: A customisable Discord theme for Monokai lovers
 
-[![`LGPL-3.0-or-later`](https://img.shields.io/badge/license-LGPL--3.0--or--later-blue)](https://github.com/cainy-a/Diskai/blob/master/LICENSE.md)
+A Monokai-themed Discord theme.
 
-Isn’t Monokai just a wonderful colour scheme? Let’s make a Discord theme around it!
-
-Main development target will be Powercord because BetterDiscord is broken on canary at the moment (2021-01-30).
-
-~~I may add support for BBD if I get around to it.~~ This theme has some features that are enabled with SASS. If you want to use this with BetterDiscord, set your [optional features](#optional-features), then compile it yourself.
+This theme has some features that are enabled with SASS.
+You can compile the theme yourself to change them.
 
 # Optional Features
 
 Diskai comes with some optional features that can be enabled and disabled easily. As of now these are:
 - Strikethrough muted channels and categories
 - Hide the help button (top right)
-- [Nicer image spoilers](https://discord.com/channels/538759280057122817/755005803303403570/811210109405495316) (made to look like iOS image spoilers)
 - Coloured channel hashtags - removes the unread pill and channel text colours, and shows unread / selected channels by colouring the hashtag icon.
 - Disable mention theming because with some plugins such as [this one](https://github.com/A-User-s-Discord-Plugins/role-colors) makes it look bad.
 - Add transitions on loads of stuff to \~\~smooth~~ out your Discord experience (and change the duration).
-- Compact mode: lots of tweaks to make Discord fit more info into less space! - Powered by [Smolcord](https://github.com/cainy-a/SmolCord).
-- New User Card: A [refreshed design](https://thicc-anime.thigh.pics/CA1e57F.png) for the user card in settings
-- Usrbg: Enable importing [Usrbg](https://github.com/Discord-Custom-Covers/usrbg) for awesome user profile & popout backgrounds
-- Amogus: [When the settings panel is sus!!!!!!](https://cdn.discordapp.com/attachments/690477562857521174/829723641221480498/unknown.png)
 - Old Clyde: Revert Clyde to his pre-2021 self :)
 
 Enable / Disable by editing the variables in `_features.scss`: (this shows the defaults)
 ```scss
 $strikethrough-mute: true;
 $hide-help: true;
-$ios-image-spoilers: true;
 $coloured-channel-hashtags: true;
 $disable-mention-theming: false;
 $transitions: true;
-$transition-duration: .2s;
-$compact: true;
-$new-user-card: true;
-$usrbg: true;
-$amogus: false;
-$old-discord-logo: true;
+$transition-duration: 0.2s;
+$old-discord-logo: false;
 ```
 
 # I want to customise it!!!
 
 Okay then! Sounds good! Put one of the following in your Quick CSS. Make sure to reference the list of variables.
-
-[2021-05-15] Due to Discord's weird rebrand,
-the original Blurple is now a colour choice.
-#bringbackblurple
 
 ## Variables list
 
@@ -66,7 +49,7 @@ the original Blurple is now a colour choice.
 	--monokai-bright-white: #f6f6ef;
 	--monokai-background: #1a1a1a;
 	--monokai-foreground: #c4c5b5;
-	
+
 	/* Diskai colours */
 	--diskai-pink: #ff4d91;
 	--diskai-light-pink: #ffb3d0;
@@ -77,10 +60,8 @@ the original Blurple is now a colour choice.
 	--diskai-dark-green: #79b814;
 	--diskai-muted-white: #888;
 
-	/* Very unimportant colours
-	sad to see this one go and be replaced by #5865F2 :( */
 	--old-blurple: #7289DA;
-	
+
 	/* VERY IMPORTANT CUSTOMISATION VARIABLES */
 	--diskai-accent-colour: var(--diskai-dark-green);
 	--diskai-accent-contrast: var(--text-normal);
@@ -104,7 +85,7 @@ the original Blurple is now a colour choice.
 	--channeltextarea-background: #303030;
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
-	
+
 	/* Text colours */
 	/* main Text colours */
 	--text-normal: var(--monokai-bright-white);
@@ -117,7 +98,7 @@ the original Blurple is now a colour choice.
 	/* headers */
 	--header-primary: var(--diskai-accent-colour);
 	--header-secondary: #bbb; /* Wait this is actually the stock value */
-	
+
 	/* Controls */
 	--diskai-control-radio-dot: var(--monokai-purple); /* Radio button */
 	--diskai-control-checkbox-checked: var(--monokai-purple); /* Checked checkbox */
@@ -136,7 +117,7 @@ the original Blurple is now a colour choice.
 	/*******************************\
 	|          BG colours           |
 	\*******************************/
-	
+
 	/* main BG colours */
 	--background-primary:   var(--monokai-bright-white);
 	--background-secondary: #ddddd5;
@@ -148,7 +129,7 @@ the original Blurple is now a colour choice.
 	--channeltextarea-background: #ccccce;
 	/* fix quick switcher textarea colour */
 	--deprecated-quickswitcher-input-background: var(--channeltextarea-background);
-	
+
 	/* Text colours */
 	/* main Text colours */
 	--text-normal: var(--monokai-black);
@@ -161,7 +142,7 @@ the original Blurple is now a colour choice.
 	/* headers */
 	--header-primary:   var(--diskai-accent-colour);
 	--header-secondary: #666; /* Wait this is actually the stock value */
-	
+
 	/* Controls */
 	--diskai-control-radio-dot:        var(--monokai-purple);           /* Radio button */
 	--diskai-control-checkbox-checked: var(--monokai-purple);           /* Checked checkbox */
@@ -281,11 +262,3 @@ Pick a colour variable or define your own colour and add it into `/*<colour>*/`.
 	--diskai-muted-white: /*<colour>*/ !important;
 }
 ```
-
-# Hey theme devs! Listen!
-
-The hypesquad banner in settings are annoying cause you can only get the class for the house you’re in. As of 2021-01-30, 16:57 GMT, ON DISCORD CANARY:
-
-- `.membershipDialogHouse1-3KhKE-` is the Bravery class
-- `.membershipDialogHouse2-35h9SY` is the Brilliance class
-- `.membershipDialogHouse3-15OBIQ` is the Balance class
